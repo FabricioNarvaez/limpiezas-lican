@@ -11,7 +11,7 @@ export default {
         },
         extend: {
         colors: {
-            'fondo': '#FAFAFA',
+            'fondo': '#F3F3F3',
             'texto-principal': '#1E1E1E',
             'texto-secundario': '#4B5563',
             
