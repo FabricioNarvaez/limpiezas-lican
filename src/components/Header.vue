@@ -14,7 +14,7 @@
           <router-link 
             v-for="link in navStore.links" 
             :key="link.name" 
-            :to="link.path"
+            :to="link.href"
             class="text-texto-secundario hover:text-acento-oscuro transition duration-150 ease-in-out font-medium"
           >
             {{ link.name }}
@@ -55,7 +55,7 @@
           <router-link 
             v-for="link in navStore.links" 
             :key="link.name" 
-            :to="link.path"
+            :to="link.href"
             @click="navStore.toggleNav()"
             class="block px-3 py-2 rounded-md text-base font-medium text-texto-principal hover:bg-acento-claro hover:text-fondo w-full text-center"
           >
