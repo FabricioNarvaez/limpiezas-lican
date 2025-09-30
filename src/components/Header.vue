@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center h-20">
         
         <router-link to="/" class="flex-shrink-0 flex items-center">
-            <img src="/img/LicanLogo2.png" alt="Logo Lican" class="h-40 w-auto drop-shadow-lg" />
+            <img src="/img/LicanLogo2.webp" alt="Logo Lican" class="h-40 w-auto drop-shadow-lg" />
             <span class="ml-3 text-xs text-texto-secundario tracking-widest uppercase hidden md:inline">
                 Servicios de limpieza ecológicos
             </span>

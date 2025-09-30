@@ -1,8 +1,7 @@
 <template>
     <section class="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center bg-fondo"
-        style="background-image: url('/img/hero-clean.jpg'); background-size: cover; background-position: center;"
+        style="background-image: url('/img/hero-clean.webp'); background-size: cover; background-position: center;"
     >
-        <!-- TODO: Cambiar fondo por una imagen de alta calidad relacionada con limpieza profesional y ecológica y el main del contenido en un card -->
         <div class="absolute inset-0 bg-texto-principal opacity-60"></div>
 
         <div class="relative z-10 text-center max-w-4xl px-4 py-20">
