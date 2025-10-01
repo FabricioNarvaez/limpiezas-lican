@@ -20,12 +20,12 @@
             {{ link.name }}
           </router-link>
           
-          <router-link 
+          <!-- <router-link 
             to="/contacto" 
             class="ml-4 py-2 px-6 rounded-full bg-acento text-fondo font-bold hover:bg-acento-oscuro transition duration-150 ease-in-out shadow-md"
           >
             Presupuesto
-          </router-link>
+          </router-link> -->
         </nav>
         
         <div class="md:hidden flex items-center">
