@@ -39,7 +39,7 @@
                 class="py-3 px-10 rounded-full text-lg font-bold bg-contraste text-fondo shadow-md 
                         hover:bg-opacity-90 transition duration-300 transform hover:scale-105"
                 >
-                    Ver Catálogo Completo de Servicios
+                    Ver todos los Servicios
                 </router-link>
             </div>
 
