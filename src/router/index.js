@@ -12,7 +12,10 @@ const routes = [
         component: () => import('@views/ServicesView.vue'),
     },
     {
-    }
+        path: '/contacto',
+        name: 'Contact',
+        component: () => import('@views/ContactView.vue'),
+    },
 ];
 
 const router = createRouter({

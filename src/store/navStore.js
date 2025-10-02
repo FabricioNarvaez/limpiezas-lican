@@ -6,8 +6,7 @@ export const useNavStore = defineStore('nav', () => {
     const links = ref([
         { name: 'Inicio', href: '/' },
         { name: 'Servicios', href: '/servicios' },
-        // { name: 'Nosotros', href: '/nosotros' },
-        // { name: 'Contacto', href: '/contacto' }
+        { name: 'Contacto', href: '/contacto' }
     ])
 
     function toggleNav() {
