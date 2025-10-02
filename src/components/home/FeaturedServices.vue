@@ -11,7 +11,7 @@
             </div>
 
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                <div v-for="service in services" :key="service.id" 
+                <div v-for="service in homeServices()" :key="service.id" 
                 class="flex flex-col p-6 rounded-xl bg-white border-2 border-gray-100 transition duration-300 hover:shadow-elevado hover:border-acento"
                 >
                     <div class="text-acento mb-4 w-12 h-12 flex items-center justify-center rounded-full bg-acento-claro bg-opacity-10">
@@ -22,7 +22,7 @@
                         {{ service.title }}
                     </h3>
                     <p class="text-texto-secundario mb-4 flex-grow">
-                        {{ service.description }}
+                        {{ service.descriptionHome }}
                     </p>
                     
                     <router-link :to="service.path" class="mt-auto text-acento font-semibold hover:text-acento-oscuro flex items-center">
@@ -48,42 +48,5 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue';
-    import { 
-    BuildingOfficeIcon,
-    HomeModernIcon,
-    WrenchScrewdriverIcon,
-    SparklesIcon
-    } from '@heroicons/vue/24/outline';
-
-    const services = ref([
-    { 
-        id: 1, 
-        title: 'Limpieza de Oficinas y Empresas', 
-        description: 'Soluciones de limpieza verde adaptadas a entornos corporativos, garantizando un ambiente de trabajo saludable.',
-        iconComponent: BuildingOfficeIcon,
-        path: '/servicios#oficinas'
-    },
-    { 
-        id: 2, 
-        title: 'Comunidades y Espacios Comunes', 
-        description: 'Mantenimiento integral de zonas comunes, escaleras y portales con productos que protegen a vecinos y mascotas.',
-        iconComponent: HomeModernIcon,
-        path: '/servicios#comunidades'
-    },
-    { 
-        id: 3, 
-        title: 'Limpieza Post-Obra y Profunda', 
-        description: 'Eliminación completa de restos y polvo de obra, con técnicas profesionales y sin residuos químicos persistentes.',
-        iconComponent: WrenchScrewdriverIcon,
-        path: '/servicios#especiales'
-    },
-    { 
-        id: 4, 
-        title: 'Limpieza Residencial Ecológica', 
-        description: 'Servicios de limpieza para el hogar enfocados en el bienestar familiar, utilizando únicamente productos biodegradables.',
-        iconComponent: SparklesIcon,
-        path: '/servicios#residencial'
-    }
-    ]);
+    import { homeServices } from '@composables/useServices';
 </script>

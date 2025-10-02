@@ -13,7 +13,8 @@ export default defineConfig({
             '@assets': path.resolve(fileURLToPath(new URL('./src/assets', import.meta.url))),
             '@store': path.resolve(fileURLToPath(new URL('./src/store', import.meta.url))),
             '@views': path.resolve(fileURLToPath(new URL('./src/views', import.meta.url))),
-            '@router': path.resolve(fileURLToPath(new URL('./src/router', import.meta.url)))
+            '@router': path.resolve(fileURLToPath(new URL('./src/router', import.meta.url))),
+            '@composables': path.resolve(fileURLToPath(new URL('./src/composables', import.meta.url))),
         }
     }
 });
