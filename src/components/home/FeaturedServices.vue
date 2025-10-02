@@ -76,7 +76,7 @@
         title: 'Limpieza Post-Obra y Profunda', 
         description: 'Eliminación completa de restos y polvo de obra, con técnicas profesionales y sin residuos químicos persistentes.',
         iconComponent: WrenchScrewdriverIcon,
-        path: '/servicios#post-obra'
+        path: '/servicios#especiales'
     },
     { 
         id: 4, 
