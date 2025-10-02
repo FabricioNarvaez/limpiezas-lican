@@ -4,8 +4,15 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('../views/HomeView.vue'),
+        component: () => import('@views/HomeView.vue'),
     },
+    {
+        path: '/servicios',
+        name: 'Services',
+        component: () => import('@views/ServicesView.vue'),
+    },
+    {
+    }
 ];
 
 const router = createRouter({
