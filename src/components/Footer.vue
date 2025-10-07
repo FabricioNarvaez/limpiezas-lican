@@ -8,10 +8,10 @@
                     <p class="mt-4 text-sm text-gray-400">Comprometidos con la calidad y la sostenibilidad.</p>
                 </div>
 
-                <div v-if="navStore.links.length">
+                <div v-if="useSitePaths.length">
                     <h3 class="text-lg font-semibold mb-4 text-acento-claro uppercase tracking-wider">Navegación</h3>
                     <ul class="space-y-2">
-                        <li v-for="link in navStore.links" :key="link.name">
+                        <li v-for="link in useSitePaths" :key="link.name">
                             <router-link :to="link.path" class="text-gray-300 hover:text-acento transition duration-150 text-sm">
                                 {{ link.name }}
                             </router-link>
@@ -77,6 +77,7 @@
 <script setup>
     import { useNavStore } from '@store/navStore';
     import { useFooterStore } from '@store/footerStore';
+    import { useSitePaths } from '@composables/useSitePaths';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/vue/24/outline';
 
     const navStore = useNavStore();
