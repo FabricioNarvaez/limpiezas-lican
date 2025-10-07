@@ -18,10 +18,16 @@
             </router-link>
         </div>
     </div>
+    <div v-else-if="!formSubmitted">
+        <div class="p-6 bg-yellow-100 border-l-4 border-yellow-500 rounded-md text-yellow-700 mb-6" v-if="formSubmitted === false">
+            <p class="font-bold text-lg mb-2">¡Vaya! Algo salió mal.</p>
+            <p>Por favor, inténtalo de nuevo más tarde o contáctanos directamente a <a href="mailto:contacto@limpiezaslican.es " class="underline font-semibold">contacto@limpiezaslican.es</a>.</p>
+        </div>
+    </div>
 
     <FormKit
         type="form"
-        @submit="submitHandler"
+        @submit="handleSubmit"
         submit-label="Solicitar Presupuesto"
         :actions="false"
         v-if="!formSubmitted"
@@ -96,13 +102,29 @@
         value: s.id
     }));
 
-    const formSubmitted = ref(false);
+    const formSubmitted = ref(null);
+    const FORM_URL = import.meta.env.VITE_FORM_URL || '';
 
-    const submitHandler = async (formData) => {
-        // TODO: Enviar formulario a backend o servicio de email
-        console.log("Enviando datos:", formData);
-        formSubmitted.value = true;
-    };
+    const handleSubmit = async (formData, node) => {
+        try {
+            const response = await fetch(FORM_URL, { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                formSubmitted.value = true;
+                node.reset();
+            } else {
+                formSubmitted.value = false;
+            }
+        } catch (e) {
+            formSubmitted.value = false;
+        };
+    }
 </script>
 
 <style scoped>
