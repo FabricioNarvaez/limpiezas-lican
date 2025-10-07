@@ -1,7 +1,7 @@
 <template>
     <main>
         <ViewHeader :headerProps />
-        <!-- <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div class="lg:col-span-2">
                     <ContactForm />
@@ -10,14 +10,14 @@
                     <ContactInfo />
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
 </template>
 
 <script setup>
     import ViewHeader from '@components/viewHeader.vue';
-    // import ContactForm from '@components/contact/ContactForm.vue';
-    // import ContactInfo from '@components/contact/ContactInfo.vue';
+    import ContactForm from '@components/contact/ContactForm.vue';
+    import ContactInfo from '@components/contact/ContactInfo.vue';
 
     const headerProps = {
         title: 'Hablemos de tu Proyecto',
