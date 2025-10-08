@@ -1,7 +1,5 @@
-import { ref } from "vue";
-
-export const useSitePaths = ref([
-    { name: 'Inicio', href: '/' },
-    { name: 'Servicios', href: '/servicios' },
-    // { name: 'Contacto', href: '/contacto' }
-]);
+export const sitePaths = [
+    { name: 'Inicio', path: '/' },
+    { name: 'Servicios', path: '/servicios' },
+    // { name: 'Contacto', path: '/contacto' }
+];
