@@ -12,17 +12,17 @@
             </div>
         </div>
 
-        <!-- <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
             <TrustFigures />
-        </div> -->
+        </div>
     </main>
 </template>
 
 <script setup>
     import ViewHeader from '@components/viewHeader.vue';
     import ValueProposition from '@components/aboutUs/ValueProposition.vue';
-    import EcologicalCommitment from '@/components/aboutUs/EcologicalCommitment.vue';
-// import TrustFigures from '@/components/TrustFigures.vue';
+    import EcologicalCommitment from '@components/aboutUs/EcologicalCommitment.vue';
+    import TrustFigures from '@components/aboutUs/TrustFigures.vue';
 
     const headerProps = {
         title: 'Sobre Nosotros',
