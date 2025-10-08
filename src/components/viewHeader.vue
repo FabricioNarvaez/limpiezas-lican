@@ -5,8 +5,7 @@
             <h1 class="text-4xl md:text-6xl font-extrabold text-texto-principal mb-4">
                 {{ headerProps.subtitle }} <span class="text-acento">{{ headerProps.subtitleSpan }}</span>
             </h1>
-            <p class="text-lg md:text-xl text-texto-secundario max-w-3xl mx-auto">
-                {{ headerProps.description}}
+            <p class="text-lg md:text-xl text-texto-secundario max-w-3xl mx-auto" v-html="headerProps.description">
             </p>
         </div>
     </section>

@@ -28,6 +28,6 @@
         title: 'Sobre Nosotros',
         subtitle: 'Lican: Limpieza con',
         subtitleSpan: 'Conciencia y Calidad',
-        description: 'Aunque Lican acaba de nacer, lo hace con la experiencia y el compromiso personal de nuestro equipo, el cual traslada más de 10 años en el sector. Clientes de confianza nos han seguido, buscando un servicio más directo y responsable.'
+        description: 'Aunque <span class="font-bold">Lican</span> acaba de nacer, lo hace con la experiencia y el compromiso personal de nuestro equipo, el cual traslada más de <span class="font-bold">10 años</span> en el sector. <br/><br/>Clientes de confianza nos han seguido, buscando un servicio más directo y responsable.'
     }
 </script>
