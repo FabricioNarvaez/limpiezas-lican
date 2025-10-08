@@ -12,9 +12,9 @@
 
         <nav class="hidden md:flex md:space-x-8 items-center">
           <router-link 
-            v-for="link in navStore.links" 
+            v-for="link in sitePaths" 
             :key="link.name" 
-            :to="link.href"
+            :to="link.path"
             class="text-texto-secundario hover:text-acento-oscuro transition duration-150 ease-in-out font-medium"
           >
             {{ link.name }}
@@ -24,7 +24,7 @@
             to="/contacto" 
             class="ml-4 py-2 px-6 rounded-full bg-acento text-fondo font-bold hover:bg-acento-oscuro transition duration-150 ease-in-out shadow-md"
           >
-            Presupuesto
+            Contacto
           </router-link>
         </nav>
         
@@ -53,9 +53,9 @@
       <div v-if="navStore.isOpen" class="md:hidden absolute w-full bg-fondo shadow-elevado pb-4 transition transform origin-top">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
           <router-link 
-            v-for="link in navStore.links" 
+            v-for="link in sitePaths" 
             :key="link.name" 
-            :to="link.href"
+            :to="link.path"
             @click="navStore.toggleNav()"
             class="block px-3 py-2 rounded-md text-base font-medium text-texto-principal hover:bg-acento-claro hover:text-fondo w-full text-center"
           >
@@ -67,7 +67,7 @@
             @click="navStore.toggleNav()"
             class="mt-4 w-4/5 py-3 px-6 rounded-lg bg-acento text-fondo font-bold text-center hover:bg-acento-oscuro transition duration-150 ease-in-out"
           >
-            Presupuesto
+            Contacto
           </router-link>
         </div>
       </div>
@@ -77,6 +77,7 @@
 
 <script setup>
     import { useNavStore } from '@store/navStore';
-    const navStore = useNavStore();
+    import { sitePaths } from '@composables/useSitePaths.js';
 
+    const navStore = useNavStore();
 </script>
