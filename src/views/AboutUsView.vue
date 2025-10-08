@@ -6,13 +6,13 @@
             <ValueProposition />
         </div>
 
-        <!-- <div class="bg-acento-claro py-16 md:py-24">
+        <div class="bg-acento-claro py-16 md:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <EcologicalCommitment />
             </div>
         </div>
 
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+        <!-- <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
             <TrustFigures />
         </div> -->
     </main>
@@ -21,7 +21,7 @@
 <script setup>
     import ViewHeader from '@components/viewHeader.vue';
     import ValueProposition from '@components/aboutUs/ValueProposition.vue';
-// import EcologicalCommitment from '@/components/EcologicalCommitment.vue';
+    import EcologicalCommitment from '@/components/aboutUs/EcologicalCommitment.vue';
 // import TrustFigures from '@/components/TrustFigures.vue';
 
     const headerProps = {
