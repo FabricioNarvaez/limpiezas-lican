@@ -5,6 +5,7 @@ import ContactView from '@views/ContactView.vue';
 import AboutUsView from '@views/AboutUsView.vue';
 import PrivacyView from '@views/PrivacyView.vue';
 import LegalNoticeView from '@views/LegalNoticeView.vue';
+import CookiesView from '@views/CookiesView.vue';
 
 const routes = [
     {
@@ -36,6 +37,11 @@ const routes = [
         path: '/legal/aviso-legal',
         name: 'LegalNotice',
         component: LegalNoticeView,
+    },
+    {
+        path: '/legal/politica-cookies',
+        name: 'CookiePolicy',
+        component: CookiesView,
     },
 ];
 
