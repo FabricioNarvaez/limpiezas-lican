@@ -3,9 +3,9 @@ import { defineStore } from "pinia";
 
 export const useFooterStore = defineStore("footer", () => {
     const legalLinks = [
-        { name: 'Aviso Legal', path: '/aviso-legal' },
-        { name: 'Política de Privacidad', path: '/politica-privacidad' },
-        { name: 'Política de Cookies', path: '/politica-cookies' },
+        { name: 'Aviso Legal', path: '/legal/aviso-legal' },
+        { name: 'Política de Privacidad', path: '/legal/politica-privacidad' },
+        { name: 'Política de Cookies', path: '/legal/politica-cookies' },
     ];
 
     const contactInfo = {
