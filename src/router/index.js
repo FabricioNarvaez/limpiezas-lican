@@ -3,6 +3,8 @@ import HomeView from '@views/HomeView.vue';
 import ServicesView from '@views/ServicesView.vue';
 import ContactView from '@views/ContactView.vue';
 import AboutUsView from '@views/AboutUsView.vue';
+import PrivacyView from '@views/PrivacyView.vue';
+import LegalNoticeView from '@views/LegalNoticeView.vue';
 
 const routes = [
     {
@@ -24,6 +26,16 @@ const routes = [
         path: '/nosotros',
         name: 'About',
         component: AboutUsView,
+    },
+    {
+        path: '/legal/politica-privacidad',
+        name: 'PrivacyPolicy',
+        component: PrivacyView,
+    },
+    {
+        path: '/legal/aviso-legal',
+        name: 'LegalNotice',
+        component: LegalNoticeView,
     },
 ];
 
