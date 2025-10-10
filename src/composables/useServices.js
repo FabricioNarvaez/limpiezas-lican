@@ -1,9 +1,14 @@
 import { ref } from 'vue';
 import { 
     BuildingOfficeIcon, HomeModernIcon,
-    WindowIcon, CogIcon, SunIcon, SwatchIcon, 
+    CogIcon, SunIcon, SwatchIcon, 
     HomeIcon, TruckIcon 
 } from '@heroicons/vue/24/outline';
+
+import imgPanelesSolares from '@images/services/1.jpg'; 
+import imgCuartoMaquinas from '@images/services/2.jpg'; 
+import imgTechoSucioLimpio from '@images/services/4.jpg'; 
+import imgTuberiasAntesDespues from '@images/services/8.jpg'; 
 
 export const allServices = ref([
     {
@@ -17,7 +22,9 @@ export const allServices = ref([
             'Limpieza de despachos y salas de reuniones',
             'Limpieza y desinfección de baños y cocinas',
             'Gestión ecológica de residuos',
-        ]
+        ],
+        image: imgCuartoMaquinas,
+        alt: 'Área técnica y cuarto de máquinas industrial mantenido impecable por Lican.',
     },
     {
         id: 'comunidades',
@@ -30,33 +37,25 @@ export const allServices = ref([
             'Limpieza de escaleras, ascensores y pasillos',
             'Mantenimiento de garajes y trasteros',
             'Limpieza de cristales y barandillas',
-        ]
+        ],
+        image: null,
+        alt: null,
     },
     {
-        id: 'cristales',
-        title: 'Limpieza Profesional de Cristales',
-        iconComponent: WindowIcon,
-        path: '/servicios#cristales',
-        descriptionServices: 'Servicio de limpieza y pulido de cristales en altura o a nivel de calle, fachadas acristaladas y escaparates, utilizando herramientas especializadas.',
-        descriptionHome: 'Hacemos que sus ventanas, escaparates y fachadas brillen, eliminando manchas persistentes y marcas de agua con seguridad y profesionalidad.',
-        includes: [
-            'Limpieza de ventanas y escaparates',
-            'Limpieza de cristales en altura (con medios auxiliares)',
-            'Tratamiento antical y antipolvo para vidrios',
-        ]
-    },
-    {
-        id: 'alimentaria',
-        title: 'Limpieza y Mantenimiento Industrial Alimentario',
+        id: 'industrial-tecnico',
+        title: 'Limpieza Industrial, Técnica y Post-Obra',
         iconComponent: CogIcon,
-        path: '/servicios#alimentaria',
-        descriptionServices: 'Servicios de desinfección y saneamiento riguroso en entornos de producción alimentaria, cumpliendo con la normativa APPCC y los más altos estándares de higiene.',
-        descriptionHome: null,
+        path: '/servicios#industrial-tecnico',
+        descriptionServices: 'Servicios de saneamiento riguroso en entornos industriales, post-obra y áreas técnicas, cumpliendo con la normativa. Incluye limpieza en altura de estructuras, conductos y maquinaria.',
+        descriptionHome: 'Especialistas en la suciedad más difícil: limpieza de techos, tuberías, maquinaria industrial y eliminación de restos de obra.',
         includes: [
-            'Limpieza de líneas de producción y maquinaria',
-            'Desinfección de salas blancas y áreas sensibles',
+            'Limpieza de techos y estructuras en altura',
+            'Desengrase de maquinaria y líneas de producción',
+            'Eliminación de restos de obra y cemento',
             'Protocolos de limpieza validados y certificados',
-        ]
+        ],
+        image: imgTuberiasAntesDespues,
+        alt: 'Contraste en la limpieza profunda de tuberías industriales antes y después.',
     },
     {
         id: 'suelos',
@@ -69,7 +68,9 @@ export const allServices = ref([
             'Pulido y eliminación de arañazos profundos',
             'Abrillantado y sellado de superficies',
             'Cristalizado para protección y acabado espejo',
-        ]
+        ],
+        image: null,
+        alt: null,
     },
     {
         id: 'paneles',
@@ -82,7 +83,9 @@ export const allServices = ref([
             'Limpieza con agua osmotizada (sin residuos)',
             'Mantenimiento en grandes superficies y tejados',
             'Inspección visual del estado del panel',
-        ]
+        ],
+        image: imgPanelesSolares,
+        alt: 'Limpieza ecológica de paneles solares en un tejado industrial con agua osmotizada.',
     },
     {
         id: 'fachadas',
@@ -95,11 +98,13 @@ export const allServices = ref([
             'Limpieza a presión controlada',
             'Tratamiento anti-grafiti y anti-musgo',
             'Limpieza de piedra y ladrillo visto',
-        ]
+        ],
+        image: imgTechoSucioLimpio,
+        alt: 'Limpieza de cubiertas y fachadas con contraste antes y después.',
     },
     {
         id: 'montaje',
-        title: 'Montaje y Desmontaje de Mobiliario',
+        title: 'Montaje y Desmontaje de Mobiliario (Servicio Auxiliar)',
         iconComponent: TruckIcon,
         path: '/servicios#montaje',
         descriptionServices: 'Servicio auxiliar de montaje, desmontaje y recolocación de muebles en oficinas o comunidades, facilitando mudanzas o cambios de distribución.',
@@ -108,7 +113,9 @@ export const allServices = ref([
             'Montaje de mobiliario nuevo y reubicación',
             'Desmontaje para mudanzas internas',
             'Ajuste y anclaje de estanterías y elementos de seguridad',
-        ]
+        ],
+        image: null,
+        alt: null,
     }
 ]);
 

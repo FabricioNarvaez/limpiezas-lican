@@ -11,6 +11,7 @@ export default defineConfig({
             '@': path.resolve(fileURLToPath(new URL('./src', import.meta.url))),
             '@components': path.resolve(fileURLToPath(new URL('./src/components', import.meta.url))),
             '@assets': path.resolve(fileURLToPath(new URL('./src/assets', import.meta.url))),
+            '@images': path.resolve(fileURLToPath(new URL('./src/assets/images', import.meta.url))),
             '@store': path.resolve(fileURLToPath(new URL('./src/store', import.meta.url))),
             '@views': path.resolve(fileURLToPath(new URL('./src/views', import.meta.url))),
             '@router': path.resolve(fileURLToPath(new URL('./src/router', import.meta.url))),
