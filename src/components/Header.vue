@@ -10,7 +10,7 @@
             </span>
         </router-link>
 
-        <nav class="hidden md:flex md:space-x-8 items-center">
+        <nav class="hidden lg:flex lg:space-x-8 items-center">
           <router-link 
             v-for="link in sitePaths" 
             :key="link.name" 
@@ -28,7 +28,7 @@
           </router-link>
         </nav>
         
-        <div class="md:hidden flex items-center">
+        <div class="lg:hidden flex items-center">
           <button @click="navStore.toggleNav()" class="inline-flex items-center justify-center p-2 rounded-md text-texto-secundario hover:text-acento-oscuro focus:outline-none focus:ring-2 focus:ring-inset focus:ring-acento">
             <svg v-if="!navStore.isOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -50,7 +50,7 @@
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-4"
     >
-      <div v-if="navStore.isOpen" class="md:hidden absolute w-full bg-fondo shadow-elevado pb-4 transition transform origin-top">
+      <div v-if="navStore.isOpen" class="lg:hidden absolute w-full bg-fondo shadow-elevado pb-4 transition transform origin-top">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
           <router-link 
             v-for="link in sitePaths" 
