@@ -18,23 +18,18 @@
                 </div>
             </div>
         </div>
-
-        <div class="text-center mt-20 p-8 bg-acento-claro rounded-xl shadow-lg">
-            <h3 class="text-2xl font-extrabold text-acento mb-4">¿Necesitas una Solución a Medida?</h3>
-            <p class="text-lg text-texto-principal mb-6">
-                Si tu necesidad no se encuentra en nuestro listado, contacta con Lican y diseñaremos un plan de limpieza personalizado.
-            </p>
-             <router-link 
-                to="/contacto" 
-                class="py-3 px-10 rounded-full text-lg font-bold bg-acento text-fondo shadow-elevado 
-                       hover:bg-acento-oscuro transition duration-300 transform hover:scale-105"
-             >
-                Solicitar Estudio Gratuito
-             </router-link>
-        </div>
+        <CtaSection :ctaProps/>
     </div>
 </template>
 
 <script setup>
     import { allServices } from '@composables/useServices';
+    import CtaSection from '@components/CtaSection.vue';
+
+    const ctaProps = {
+        title: '¿Necesitas una Solución a Medida?',
+        subtitle: 'Si tu necesidad no se encuentra en nuestro listado, contacta con Lican y diseñaremos un plan de limpieza personalizado.',
+        bgColor: 'bg-acento-claro',
+        buttonText: 'Solicitar Estudio Gratuito',
+    }
 </script>
