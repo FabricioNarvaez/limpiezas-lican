@@ -3,15 +3,15 @@
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">1. Datos de Identificación del Titular</h2>
         <p>En cumplimiento con el deber de información recogido en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI), se informa de lo siguiente:</p>
         <ul class="list-none space-y-2 ml-4">
-            <li><span class="font-bold">Titular de la Web:</span> {{ ownerName }} (operando bajo el nombre comercial <span class="font-bold">Licán Servicios de limpieza ecológica</span>)</li>
-            <li><span class="font-bold">NIF/DNI:</span> {{ cif }}</li>
-            <li><span class="font-bold">Domicilio a efectos de notificación:</span> {{ direccion }}</li>
-            <li><span class="font-bold">Correo Electrónico:</span> <a :href="`mailto:${email}`" class="text-acento hover:underline">{{ email }}</a></li>
+            <li><span class="font-bold">Titular de la Web:</span> {{ contactInfo.owner }} (operando bajo el nombre comercial <span class="font-bold">Licán Servicios de limpieza ecológica</span>)</li>
+            <li><span class="font-bold">NIF/DNI:</span> {{ contactInfo.cif }}</li>
+            <li><span class="font-bold">Domicilio a efectos de notificación:</span> {{ contactInfo.address }}</li>
+            <li><span class="font-bold">Correo Electrónico:</span> <a :href="`mailto:${contactInfo.email}`" class="text-acento hover:underline" target="_blank">{{ contactInfo.email }}</a></li>
             </ul>
         <p class="mt-4">Actualmente, <span class="font-bold">Licán Servicios de limpieza ecológica</span> opera como una actividad de autónomo en proceso de alta en la Seguridad Social. La información aquí reflejada corresponde a la persona física titular de dicha actividad.</p>
 
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">2. Objeto</h2>
-        <p>El presente Aviso Legal regula el acceso y la utilización del sitio web <span class="font-bold">{{ website }}</span> (en adelante, el "Sitio Web") propiedad de la persona física titular de Licán.</p>
+        <p>El presente Aviso Legal regula el acceso y la utilización del sitio web <span class="font-bold">{{ contactInfo.website }}</span> (en adelante, el "Sitio Web") propiedad de la persona física titular de Licán.</p>
         <p>La utilización del Sitio Web atribuye la condición de Usuario e implica la aceptación de las condiciones incluidas en este Aviso Legal.</p>
 
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">3. Propiedad Intelectual e Industrial</h2>
@@ -27,11 +27,6 @@
 </template>
 
 <script setup>
+    import { contactInfo } from '@composables/useContactInfo';
     import LegalContent from '@components/legal/LegalContent.vue';
-
-    const ownerName = 'Ramón Ramiro Chávez Orozco';
-    const cif = '73617556F';
-    const email = 'contacto@limpiezaslican.es';
-    const direccion = 'Paseo Anelier 6, 31014 Pamplona, España';
-    const website = 'www.limpiezaslican.com'; 
 </script>
