@@ -9,8 +9,8 @@
                 <PhoneIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Teléfono</p>
-                    <a href="tel:+34675476014" class="text-texto-secundario hover:text-acento transition">
-                        +34 675 47 60 14
+                    <a :href="`tel:${contactInfo.phone.replace(/\s/g, '')}`" class="text-texto-secundario hover:text-acento transition">
+                        {{ contactInfo.phone}}
                     </a>
                 </div>
             </li>
@@ -18,8 +18,8 @@
                 <EnvelopeIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Email</p>
-                    <a href="mailto:contacto@limpiezaslican.es" class="text-texto-secundario hover:text-acento transition">
-                        contacto@limpiezaslican.es
+                    <a :href="`mailto:${contactInfo.email}`" class="text-texto-secundario hover:text-acento transition">
+                        {{ contactInfo.email }}
                     </a>
                 </div>
             </li>
@@ -27,15 +27,15 @@
                 <MapPinIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Oficina Central</p>
-                    <p class="text-texto-secundario">C/ Limpieza, 123 | Ciudad, País</p>
+                    <p class="text-texto-secundario">{{ contactInfo.address }}</p>
                 </div>
             </li> -->
             <li class="flex items-start">
                 <ClockIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
-                    <p class="font-semibold text-lg text-texto-principal">Horario</p>
-                    <p class="text-texto-secundario">Lunes a Viernes: 06:00 - 22:00</p>
-                    <p class="text-texto-secundario">Sabado y Domingo: 08:00 - 18:00</p>
+                    <p class="font-semibold text-lg text-texto-principal">Horario Atención Cliente</p>
+                    <p class="text-texto-secundario">{{ contactInfo.timetable }}</p>
+                    <p class="text-texto-secundario">{{ contactInfo.weekendTimetable }}</p>
                 </div>
             </li>
         </ul>
@@ -50,5 +50,6 @@
 </template>
 
 <script setup>
+    import { contactInfo } from '@composables/useContactInfo';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/vue/24/outline';
 </script>

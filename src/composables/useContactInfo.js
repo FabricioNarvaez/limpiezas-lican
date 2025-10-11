@@ -5,4 +5,6 @@ export const contactInfo = {
     email: 'contacto@limpiezaslican.es',
     address: 'Paseo Anelier 6, 31014 Pamplona, España',
     website: 'www.limpiezaslican.es',
+    timetable: 'Lunes a Viernes: 08:00 - 20:00',
+    weekendTimetable: 'Sábados y Domingos: 09:00 - 18:00',
 }
