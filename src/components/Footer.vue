@@ -22,21 +22,21 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4 text-acento-claro uppercase tracking-wider">Contacto</h3>
                     <ul class="space-y-3">
-                        <li v-if="footerStore.contactInfo.phone" class="flex items-center">
+                        <li v-if="contactInfo.phone" class="flex items-center">
                             <PhoneIcon class="w-5 h-5 mr-3 text-acento" />
-                            <a :href="`tel:${footerStore.contactInfo.phone.replace(/\s/g, '')}`" class="text-gray-300 hover:text-acento transition duration-150 text-sm">
-                                {{ footerStore.contactInfo.phone }}
+                            <a :href="`tel:${contactInfo.phone.replace(/\s/g, '')}`" class="text-gray-300 hover:text-acento transition duration-150 text-sm">
+                                {{ contactInfo.phone }}
                             </a>
                         </li>
-                        <li v-if="footerStore.contactInfo.email" class="flex items-center">
+                        <li v-if="contactInfo.email" class="flex items-center">
                             <EnvelopeIcon class="w-5 h-5 mr-3 text-acento" />
-                            <a :href="`mailto:${footerStore.contactInfo.email}`" class="text-gray-300 hover:text-acento transition duration-150 text-sm">
-                                {{ footerStore.contactInfo.email }}
+                            <a :href="`mailto:${contactInfo.email}`" class="text-gray-300 hover:text-acento transition duration-150 text-sm" target="_blank">
+                                {{ contactInfo.email }}
                             </a>
                         </li>
-                        <li v-if="footerStore.contactInfo.address" class="flex items-start">
+                        <li v-if="contactInfo.address" class="flex items-start">
                             <MapPinIcon class="w-5 h-5 mr-3 text-acento flex-shrink-0 mt-0.5" />
-                            <span class="text-gray-300 text-sm">{{ footerStore.contactInfo.address }}</span>
+                            <span class="text-gray-300 text-sm">{{ contactInfo.address }}</span>
                         </li>
                     </ul>
                 </div>
@@ -75,10 +75,8 @@
 </template>
 
 <script setup>
-    import { useFooterStore } from '@store/footerStore';
     import { legalPaths } from '@composables/useSitePaths';
-    import { sitePaths } from '@composables/useSitePaths.js';
+    import { sitePaths } from '@composables/useSitePaths';
+    import { contactInfo } from '@composables/useContactInfo';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/vue/24/outline';
-
-    const footerStore = useFooterStore();
 </script>

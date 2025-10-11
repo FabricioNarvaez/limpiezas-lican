@@ -26,6 +26,6 @@
 </template>
 
 <script setup>
-    import { contactInfo } from '@composables/useContactData';
+    import { contactInfo } from '@composables/useContactInfo';
     import LegalContent from '@components/legal/LegalContent.vue';
 </script>
