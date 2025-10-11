@@ -44,7 +44,7 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4 text-acento-claro uppercase tracking-wider">Información Legal</h3>
                     <ul class="space-y-2">
-                        <li v-for="link in footerStore.legalLinks" :key="link.name">
+                        <li v-for="link in legalPaths" :key="link.name">
                             <router-link :to="link.path" class="text-gray-300 hover:text-acento transition duration-150 text-sm">
                                 {{ link.name }}
                             </router-link>
@@ -76,6 +76,7 @@
 
 <script setup>
     import { useFooterStore } from '@store/footerStore';
+    import { legalPaths } from '@composables/useSitePaths';
     import { sitePaths } from '@composables/useSitePaths.js';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/vue/24/outline';
 
