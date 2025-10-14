@@ -2,14 +2,14 @@
     <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-4" data-aos="fade-up">
                 Nuestro <span class="text-acento">Proceso de Limpieza</span>
             </h2>
-            <p class="text-lg text-texto-secundario max-w-3xl mx-auto mb-16">
+            <p class="text-lg text-texto-secundario max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                 La profesionalidad de Lican se basa en un método claro, transparente y enfocado en la excelencia.
             </p>
 
-            <div class="relative flex flex-col md:flex-row justify-between items-start md:items-stretch">
+            <div class="relative flex flex-col md:flex-row justify-between items-start md:items-stretch" data-aos="fade-right" data-aos-delay="200">
                 
                 <div class="absolute top-8 left-0 right-0 h-1 bg-acento-claro hidden md:block z-0"></div>
                 

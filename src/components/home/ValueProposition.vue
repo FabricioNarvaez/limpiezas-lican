@@ -2,14 +2,14 @@
     <section class="py-16 md:py-24 bg-fondo">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-            <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-4" data-aos="zoom-in">
                 La Limpieza Profesional <span class="text-acento">que el Planeta Merece</span>
             </h2>
-            <p class="text-lg text-texto-secundario max-w-3xl mx-auto mb-12">
+            <p class="text-lg text-texto-secundario max-w-3xl mx-auto mb-12" data-aos="zoom-in" data-aos-delay="200">
                 Combinamos la eficiencia de la limpieza industrial con un compromiso total con la salud y el medio ambiente.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12" data-aos="zoom-in" data-aos-delay="400">
                 
                 <div class="p-6 rounded-lg bg-white shadow-sutil transition duration-300 hover:shadow-elevado hover:bg-gray-50">
                     <div class="text-acento mb-4">
