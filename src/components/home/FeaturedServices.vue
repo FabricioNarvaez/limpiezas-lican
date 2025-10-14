@@ -2,15 +2,15 @@
     <section class="py-16 md:py-24 bg-fondo">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-3">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-texto-principal mb-3" data-aos="fade-up">
                     Nuestros <span class="text-acento">Servicios Principales</span>
                 </h2>
-                <p class="text-lg text-texto-secundario max-w-2xl mx-auto">
+                <p class="text-lg text-texto-secundario max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                     Ofrecemos un catálogo de servicios adaptado a tu necesidad, siempre con la garantía de calidad y el compromiso ecológico de Lican.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4" data-aos="fade-up" data-aos-delay="200">
                 <div v-for="service in homeServices()" :key="service.id" 
                 class="flex flex-col p-6 rounded-xl bg-white border-2 border-gray-100 transition duration-300 hover:shadow-elevado hover:border-acento"
                 >
