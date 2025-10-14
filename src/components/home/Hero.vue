@@ -4,21 +4,21 @@
     >
         <div class="absolute inset-0 bg-texto-principal opacity-60"></div>
 
-        <div class="relative z-10 text-center max-w-4xl px-4 py-20">
+        <div class="relative z-10 text-center max-w-4xl px-4 py-20" >
             
-            <h2 class="text-xl md:text-2xl font-semibold text-acento-claro mb-4 tracking-wider uppercase">
+            <h2 class="text-xl md:text-2xl font-semibold text-acento-claro mb-4 tracking-wider uppercase" data-aos="fade-down" data-aos-delay="100">
                 Servicios de limpieza ecológicos
             </h2>
 
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-fondo leading-tight mb-8">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-fondo leading-tight mb-8" data-aos="fade-down" data-aos-delay="400">
                 Limpieza impecable, <span class="text-acento-claro">Huella impecable</span>.
             </h1>
 
-            <p class="text-lg md:text-xl text-fondo opacity-90 max-w-2xl mx-auto mb-10">
+            <p class="text-lg md:text-xl text-fondo opacity-90 max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="500">
                 <span class="font-bold">Lican</span> combina la <span class="font-bold">máxima profesionalidad</span> con un compromiso inquebrantable con el planeta. Soluciones de limpieza avanzadas para un futuro más verde.
             </p>
 
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6" data-aos="fade-up" data-aos-delay="700">
                 <router-link to="/contacto" 
                     class="py-3 px-10 rounded-full text-lg font-bold bg-acento text-fondo shadow-elevado 
                             hover:bg-acento-oscuro transition duration-300 transform hover:scale-105"
