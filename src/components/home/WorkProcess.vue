@@ -36,7 +36,7 @@
                 </div>
             </div>
             
-            <div class="text-center mt-16">
+            <div class="text-center mt-16" data-aos="fade-right" data-aos-delay="200">
                  <router-link 
                     to="/contacto" 
                     class="py-3 px-10 rounded-full mr-auto ml-auto w-fit block text-lg font-bold bg-acento text-fondo shadow-elevado 
