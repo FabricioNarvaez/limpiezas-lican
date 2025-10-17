@@ -1,96 +1,98 @@
 <template>
-    <h2 class="text-3xl font-bold text-texto-principal mb-6 border-b pb-3">
-        Formulario de Contacto Rápido
-    </h2>
-    
-    <div v-if="formSubmitted">
-        <div v-if="formSubmitted" class="p-6 bg-acento-claro border-l-4 border-acento rounded-md text-texto-principal">
-            <p class="font-bold text-lg mb-2">¡Gracias por contactar a Lican!</p>
-            <p>Hemos recibido tu solicitud. Un experto te contactará muy pronto para coordinar tu presupuesto.</p>
-        </div>
-        <div class="text-center mt-10">
-            <router-link 
-            to="/"
-            class="py-3 px-10 rounded-full mr-auto ml-auto w-fit block text-lg font-bold bg-acento text-fondo shadow-elevado 
-                    hover:bg-acento-oscuro transition duration-300 transform hover:scale-105"
-            >
-                Volver al Inicio
-            </router-link>
-        </div>
-    </div>
-    <div v-else-if="!formSubmitted">
-        <div class="p-6 bg-yellow-100 border-l-4 border-yellow-500 rounded-md text-yellow-700 mb-6" v-if="formSubmitted === false">
-            <p class="font-bold text-lg mb-2">¡Vaya! Algo salió mal.</p>
-            <p>Por favor, inténtalo de nuevo más tarde o contáctanos directamente a <a href="mailto:contacto@limpiezaslican.es " class="underline font-semibold">contacto@limpiezaslican.es</a>.</p>
-        </div>
-    </div>
-
-    <FormKit
-        type="form"
-        @submit="handleSubmit"
-        submit-label="Solicitar Presupuesto"
-        :actions="false"
-        v-if="!formSubmitted"
-    >
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-            <FormKit
-                type="text"
-                name="nombre"
-                label="Nombre completo"
-                placeholder="Ej. Juan Pérez"
-                validation="required"
-                :validation-messages="{ required: 'Su nombre es obligatorio.' }"
-            />
-            <FormKit
-                type="email"
-                name="email"
-                label="Email de contacto"
-                placeholder="ejemplo@empresa.com"
-                validation="required|email"
-                :validation-messages="{ required: 'El email es obligatorio.', email: 'Introduce un email válido.' }"
-            />
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-             <FormKit
-                type="text"
-                name="telefono"
-                label="Teléfono"
-                placeholder="Ej. +34 600 123 456"
-                validation="required|number"
-                :validation-messages="{ required: 'Necesitamos un teléfono.', number: 'Solo números.' }"
-            />
-            <FormKit
-                type="select"
-                name="servicio_interes"
-                label="Servicio de interés principal"
-                placeholder="Selecciona una opción..."
-                validation="required"
-                :options="serviceOptions"
-                :validation-messages="{ required: '¿Qué tipo de servicio va a necesitar?' }"
-            />
-        </div>
+    <div data-aos="zoom-in-right">
+        <h2 class="text-3xl font-bold text-texto-principal mb-6 border-b pb-3">
+            Formulario de Contacto Rápido
+        </h2>
         
+        <div v-if="formSubmitted">
+            <div v-if="formSubmitted" class="p-6 bg-acento-claro border-l-4 border-acento rounded-md text-texto-principal">
+                <p class="font-bold text-lg mb-2">¡Gracias por contactar a Lican!</p>
+                <p>Hemos recibido tu solicitud. Un experto te contactará muy pronto para coordinar tu presupuesto.</p>
+            </div>
+            <div class="text-center mt-10">
+                <router-link 
+                to="/"
+                class="py-3 px-10 rounded-full mr-auto ml-auto w-fit block text-lg font-bold bg-acento text-fondo shadow-elevado 
+                        hover:bg-acento-oscuro transition duration-300 transform hover:scale-105"
+                >
+                    Volver al Inicio
+                </router-link>
+            </div>
+        </div>
+        <div v-else-if="!formSubmitted">
+            <div class="p-6 bg-yellow-100 border-l-4 border-yellow-500 rounded-md text-yellow-700 mb-6" v-if="formSubmitted === false">
+                <p class="font-bold text-lg mb-2">¡Vaya! Algo salió mal.</p>
+                <p>Por favor, inténtalo de nuevo más tarde o contáctanos directamente a <a href="mailto:contacto@limpiezaslican.es " class="underline font-semibold">contacto@limpiezaslican.es</a>.</p>
+            </div>
+        </div>
+
         <FormKit
-            type="textarea"
-            name="mensaje"
-            label="Detalla tu necesidad (m2, frecuencia, etc.)"
-            placeholder="Necesito limpieza semanal para una oficina de 200m²..."
-            rows="5"
-            validation="required|length:10"
-            :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.' }"
-        />
+            type="form"
+            @submit="handleSubmit"
+            submit-label="Solicitar Presupuesto"
+            :actions="false"
+            v-if="!formSubmitted"
+        >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                <FormKit
+                    type="text"
+                    name="nombre"
+                    label="Nombre completo"
+                    placeholder="Ej. Juan Pérez"
+                    validation="required"
+                    :validation-messages="{ required: 'Su nombre es obligatorio.' }"
+                />
+                <FormKit
+                    type="email"
+                    name="email"
+                    label="Email de contacto"
+                    placeholder="ejemplo@empresa.com"
+                    validation="required|email"
+                    :validation-messages="{ required: 'El email es obligatorio.', email: 'Introduce un email válido.' }"
+                />
+            </div>
 
-        <!-- <FormKit
-            type="checkbox"
-            name="acepta_privacidad"
-            label="Acepto la Política de Privacidad."
-            validation="accepted"
-            validation-visibility="live"
-        /> -->
-        
-        <FormKit type="submit" label="Solicitar Presupuesto" />
-    </FormKit>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                <FormKit
+                    type="text"
+                    name="telefono"
+                    label="Teléfono"
+                    placeholder="Ej. +34 600 123 456"
+                    validation="required|number"
+                    :validation-messages="{ required: 'Necesitamos un teléfono.', number: 'Solo números.' }"
+                />
+                <FormKit
+                    type="select"
+                    name="servicio_interes"
+                    label="Servicio de interés principal"
+                    placeholder="Selecciona una opción..."
+                    validation="required"
+                    :options="serviceOptions"
+                    :validation-messages="{ required: '¿Qué tipo de servicio va a necesitar?' }"
+                />
+            </div>
+            
+            <FormKit
+                type="textarea"
+                name="mensaje"
+                label="Detalla tu necesidad (m2, frecuencia, etc.)"
+                placeholder="Necesito limpieza semanal para una oficina de 200m²..."
+                rows="5"
+                validation="required|length:10"
+                :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.' }"
+            />
+
+            <!-- <FormKit
+                type="checkbox"
+                name="acepta_privacidad"
+                label="Acepto la Política de Privacidad."
+                validation="accepted"
+                validation-visibility="live"
+            /> -->
+            
+            <FormKit type="submit" label="Solicitar Presupuesto" />
+        </FormKit>
+    </div>
 </template>
 
 <script setup>

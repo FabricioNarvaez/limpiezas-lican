@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-fondo p-8 rounded-xl shadow-lg border border-gray-200">
+    <div class="bg-fondo p-8 rounded-xl shadow-lg border border-gray-200" data-aos="zoom-in-left">
         <h3 class="text-2xl font-bold text-texto-principal mb-6 border-b pb-3">
             Detalles de Contacto
         </h3>
