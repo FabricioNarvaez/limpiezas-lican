@@ -8,7 +8,7 @@
 
             data-aos="fade-up" 
             :data-aos-delay="index * 100" 
-            data-aos-offset="300"
+            data-aos-offset="250"
         >
             <div 
                 :class="[

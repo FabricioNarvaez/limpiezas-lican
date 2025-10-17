@@ -1,5 +1,5 @@
 <template>
-    <section :class="ctaProps.bgColor"
+    <section :class="ctaProps.bgColor" data-aos="zoom-in" data-aos-offset="250"
         class="text-center mt-20 mb-10 max-w-7xl mr-auto ml-auto p-8 rounded-xl shadow-lg">
         <SparklesIcon class="w-12 h-12 text-fondo mx-auto mb-4" />
         <h3 class="text-2xl font-extrabold text-acento mb-4">{{ ctaProps.title}}</h3>
