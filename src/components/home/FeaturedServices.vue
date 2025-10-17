@@ -34,7 +34,7 @@
 
             </div>
             
-            <div class="text-center mt-16">
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="200">
                 <router-link to="/servicios" 
                 class="py-3 px-10 rounded-full text-lg font-bold bg-contraste text-fondo shadow-md 
                         hover:bg-opacity-90 transition duration-300 transform hover:scale-105"
