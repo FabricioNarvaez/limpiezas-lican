@@ -81,3 +81,9 @@
 
     const navStore = useNavStore();
 </script>
+
+<style scoped>
+.router-link-exact-active {
+    @apply text-acento-claro font-bold;
+}
+</style>

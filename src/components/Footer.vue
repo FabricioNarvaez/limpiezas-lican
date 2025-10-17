@@ -49,9 +49,9 @@
                                 {{ link.name }}
                             </router-link>
                         </li>
-                        <div class="mt-8 pt-4 border-t border-gray-700 text-center">
+                        <div v-if="cookiesStore.hasConsent" class="mt-8 pt-4 border-t border-gray-700 text-center">
                             <button 
-                                @click="resetConsent" 
+                                @click="cookiesStore.resetConsent" 
                                 class="text-sm text-gray-400 hover:text-acento underline"
                             >
                                 Eliminar preferencias de cookies
@@ -87,9 +87,7 @@
     import { sitePaths } from '@composables/useSitePaths';
     import { contactInfo } from '@composables/useContactInfo';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/vue/24/outline';
+    import { useCookiesStore } from '@store/cookiesStore';
 
-    const resetConsent = () => {
-        localStorage.removeItem('lican_cookie_consent');
-        location.reload();
-    };
+    const cookiesStore = useCookiesStore();
 </script>
