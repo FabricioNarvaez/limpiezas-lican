@@ -16,6 +16,7 @@ export default defineConfig({
             '@views': path.resolve(fileURLToPath(new URL('./src/views', import.meta.url))),
             '@router': path.resolve(fileURLToPath(new URL('./src/router', import.meta.url))),
             '@composables': path.resolve(fileURLToPath(new URL('./src/composables', import.meta.url))),
+            '@utils': path.resolve(fileURLToPath(new URL('./src/utils', import.meta.url))),
         }
     }
 });
