@@ -3,7 +3,7 @@
         <div 
             v-if="!cookiesStore.hasConsent" 
             class="fixed bottom-0 left-0 right-0 p-4 bg-white shadow-2xl z-50"
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-offset="0"
         >
             <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-sm leading-relaxed text-center md:text-left">
