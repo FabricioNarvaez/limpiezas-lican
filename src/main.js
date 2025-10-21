@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { Icon } from '@iconify/vue'
 import { plugin, defaultConfig } from '@formkit/vue'
+import { createHead } from '@unhead/vue';
 import App from './App.vue'
 import router from '@router/index.js'
 import AOS from 'aos';
@@ -12,6 +13,7 @@ import '@formkit/themes/genesis'
 
 createApp(App)
 .use(router)
+.use(createHead())
 .use(plugin, defaultConfig({
     theme: 'genesis'
 }))

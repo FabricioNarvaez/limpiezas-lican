@@ -12,6 +12,7 @@
     "@formkit/themes": "^1.6.9",
     "@formkit/vue": "^1.6.9",
     "@heroicons/vue": "^2.2.0",
+    "@unhead/vue": "^2.0.19",
     "aos": "^2.3.4",
     "pinia": "^3.0.3",
     "vue": "^3.5.21",
