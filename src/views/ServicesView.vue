@@ -17,6 +17,12 @@
 
     useHead({
         title: 'Catálogo Servicios - Limpiezas Licán',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://limpiezaslican.es/servicios' 
+            }
+        ],
         meta: [
             {
                 name: 'description',
@@ -30,10 +36,6 @@
                 name: 'author',
                 content: 'Licán'
             },
-            { 
-                rel: 'canonical', 
-                href: 'https://limpiezaslican.es/servicios' 
-            }
         ]
     });
 </script>

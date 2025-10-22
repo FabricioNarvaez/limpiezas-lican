@@ -16,6 +16,12 @@
 
     useHead({
         title: 'Limpiezas Licán - Servicios de limpieza ecológicos en Navarra',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://limpiezaslican.es/' 
+            }
+        ],
         meta: [
             {
                 name: 'description',
@@ -29,10 +35,6 @@
                 name: 'author',
                 content: 'Licán'
             },
-            { 
-                rel: 'canonical', 
-                href: 'https://limpiezaslican.es/' 
-            }
         ]
     });
 </script>

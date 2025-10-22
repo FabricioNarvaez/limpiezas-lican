@@ -29,6 +29,12 @@
 
     useHead({
         title: 'Contacto - Limpiezas Licán',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://limpiezaslican.es/contacto' 
+            }
+        ],
         meta: [
             {
                 name: 'description',
@@ -42,10 +48,6 @@
                 name: 'author',
                 content: 'Licán'
             },
-            { 
-                rel: 'canonical', 
-                href: 'https://limpiezaslican.es/contacto' 
-            }
         ]
     });
 </script>
