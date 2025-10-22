@@ -11,7 +11,7 @@
             </h2>
 
             <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-fondo leading-tight mb-8" data-aos="fade-down" data-aos-delay="400">
-                Limpieza impecable, <span class="text-acento-claro">Huella impecable</span>.
+                Limpieza impecable <br><span class="text-acento-claro">Especializada en toda Navarra</span>
             </h1>
 
             <p class="text-lg md:text-xl text-fondo opacity-90 max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="500">
