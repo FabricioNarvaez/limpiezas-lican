@@ -42,6 +42,12 @@
 
     useHead({
         title: 'Sobre Nosotros - Limpiezas Licán',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://limpiezaslican.es/nosotros' 
+            }
+        ],
         meta: [
             {
                 name: 'description',
@@ -54,10 +60,6 @@
             {
                 name: 'author',
                 content: 'Licán'
-            },
-            { 
-                rel: 'canonical', 
-                href: 'https://limpiezaslican.es/nosotros' 
             }
         ]
     });
