@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { Icon } from '@iconify/vue'
 import { plugin, defaultConfig } from '@formkit/vue'
-import { createHead } from '@unhead/vue'
+import { createHead } from '@unhead/vue/client'
 import App from './App.vue'
 import router from '@router/index.js'
 import AOS from 'aos';
