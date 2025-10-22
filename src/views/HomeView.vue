@@ -15,7 +15,7 @@
     import WorkProcess from '@components/home/WorkProcess.vue';
 
     useHead({
-        title: 'Licán - Servicios de limpieza ecológicos en Navarra',
+        title: 'Limpiezas Licán - Servicios de limpieza ecológicos en Navarra',
         meta: [
             {
                 name: 'description',
