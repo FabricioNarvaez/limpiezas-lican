@@ -15,6 +15,7 @@
 </template>
 
 <script setup>
+    import { useHead } from '@unhead/vue';
     import ViewHeader from '@components/viewHeader.vue';
     import ContactForm from '@components/contact/ContactForm.vue';
     import ContactInfo from '@components/contact/ContactInfo.vue';
@@ -25,4 +26,26 @@
         subtitleSpan: 'Presupuesto sin Compromiso',
         description: 'Envíanos tus datos y un especialista de Lican te contactará en menos de 24 horas para un diagnóstico personalizado.'
     }
+
+    useHead({
+        title: 'Contacto - Limpiezas Licán',
+        meta: [
+            {
+                name: 'description',
+                content: '¿Tienes un proyecto de limpieza en mente? Contacta con Limpiezas Licán para solicitar tu presupuesto sin compromiso. Nuestro equipo de expertos te atenderá en menos de 24 horas.'
+            },
+            {
+                name: 'keywords',
+                content: 'contacto limpieza, solicitar presupuesto limpieza, limpieza ecológica contacto, Limpiezas Licán, limpieza en Navarra, servicios de limpieza'
+            },
+            {
+                name: 'author',
+                content: 'Licán'
+            },
+            { 
+                rel: 'canonical', 
+                href: 'https://limpiezaslican.es/contacto' 
+            }
+        ]
+    });
 </script>
