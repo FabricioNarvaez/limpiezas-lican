@@ -1,7 +1,7 @@
 <template>
     <LegalContent title="Política de Privacidad">
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">1. Identidad del Responsable</h2>
-        <p>El responsable del tratamiento de los datos personales recogidos en este sitio web es <span class="font-bold">{{ contactInfo.owner }}</span> (en adelante, "Licán"), con CIF <span class="font-bold">{{ contactInfo.cif }}</span> y domicilio en {{ contactInfo.dirección }}.</p>
+        <p>El responsable del tratamiento de los datos personales recogidos en este sitio web es <span class="font-bold">{{ contactInfo.owner }}</span> (en adelante, "Licán"), con CIF <span class="font-bold">{{ contactInfo.cif }}</span> y domicilio en <span class="font-bold">{{ contactInfo.address }}</span>.</p>
         <p>Contacto del responsable vía email: <a :href="`mailto:${contactInfo.email}`" class="text-acento hover:underline" target="_blank">{{ contactInfo.email }}</a>.</p>
 
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">2. Finalidad del Tratamiento</h2>

@@ -82,13 +82,18 @@
                 :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.' }"
             />
 
-            <!-- <FormKit
+            <FormKit
                 type="checkbox"
                 name="acepta_privacidad"
-                label="Acepto la Política de Privacidad."
                 validation="accepted"
-                validation-visibility="live"
-            /> -->
+                :validation-messages="{ accepted: 'Por favor, para enviar el formulario es necesario que acepte la política de privacidad.' }"
+            >
+                <template #label>
+                    <p>
+                        Acepto la <router-link to="/legal/politica-privacidad" class="text-acento font-semibold underline hover:text-acento-oscuro transition duration-150" target="_blank">Política de Privacidad</router-link> y la cesión de mis datos para la gestión del presupuesto.
+                    </p>
+                </template>
+            </FormKit>
             
             <FormKit type="submit" label="Solicitar Presupuesto" />
         </FormKit>
