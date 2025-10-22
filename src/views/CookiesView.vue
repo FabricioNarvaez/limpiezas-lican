@@ -5,7 +5,7 @@
 
         <h2 class="text-2xl font-bold text-texto-principal mt-6 mb-3">2. Tipos de Cookies Utilizadas por Licán</h2>
         
-        <p>Actualmente, el sitio web <span class="font-bold">www.limpiezaslican.com</span> NO utiliza cookies de terceros para análisis, publicidad o seguimiento.</p>
+        <p>Actualmente, el sitio web <span class="font-bold">{{ contactInfo.website}}</span> NO utiliza cookies de terceros para análisis, publicidad o seguimiento.</p>
 
         <h3 class="text-xl font-semibold text-texto-principal mt-4 mb-2">2.1. Cookies Técnicas y Estrictamente Necesarias</h3>
         <p>Este sitio web utiliza únicamente cookies propias y técnicas, que son estrictamente necesarias para el correcto funcionamiento del sitio, tales como:</p>
@@ -32,5 +32,6 @@
 </template>
 
 <script setup>
+    import { contactInfo } from '@composables/useContactInfo';
     import LegalContent from '@components/legal/LegalContent.vue';
 </script>
