@@ -20,6 +20,13 @@
             { 
                 rel: 'canonical', 
                 href: 'https://limpiezaslican.es/' 
+            },
+            {
+                rel: 'preload', 
+                as: 'image', 
+                href: '/img/hero-clean.webp', 
+                type: 'image/webp', 
+                fetchpriority: 'high'
             }
         ],
         meta: [
