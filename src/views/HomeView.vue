@@ -20,6 +20,13 @@
             { 
                 rel: 'canonical', 
                 href: 'https://limpiezaslican.es/' 
+            },
+            {
+                rel: 'preload', 
+                as: 'image', 
+                href: '/img/hero-clean.webp', 
+                type: 'image/webp', 
+                fetchpriority: 'high'
             }
         ],
         meta: [
@@ -30,10 +37,6 @@
             {
                 name: 'keywords',
                 content: 'limpieza ecológica, servicios de limpieza, limpieza en Navarra, limpieza sostenible, Lican, limpieza profesional, limpieza verde'
-            },
-            {
-                name: 'author',
-                content: 'Licán'
             },
         ]
     });

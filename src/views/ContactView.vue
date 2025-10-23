@@ -44,10 +44,6 @@
                 name: 'keywords',
                 content: 'contacto limpieza, solicitar presupuesto limpieza, limpieza ecológica contacto, Limpiezas Licán, limpieza en Navarra, servicios de limpieza'
             },
-            {
-                name: 'author',
-                content: 'Licán'
-            },
         ]
     });
 </script>

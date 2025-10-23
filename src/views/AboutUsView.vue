@@ -57,10 +57,6 @@
                 name: 'keywords',
                 content: 'sobre nosotros, limpieza ecológica, experiencia en limpieza, limpieza en Navarra, servicios de limpieza sostenible, Licán'
             },
-            {
-                name: 'author',
-                content: 'Licán'
-            }
         ]
     });
 </script>
