@@ -38,10 +38,6 @@
                 name: 'keywords',
                 content: 'limpieza ecológica, servicios de limpieza, limpieza en Navarra, limpieza sostenible, Lican, limpieza profesional, limpieza verde'
             },
-            {
-                name: 'author',
-                content: 'Licán'
-            },
         ]
     });
 </script>

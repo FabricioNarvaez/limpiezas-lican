@@ -32,10 +32,6 @@
                 name: 'keywords',
                 content: 'servicios de limpieza, limpieza ecológica, limpieza en Navarra, limpieza en Pamplona, mantenimiento de paneles solares, limpieza de naves industriales, limpieza oficinas, pulido suelos, limpieza profesional, limpieza sostenible,'
             },
-            {
-                name: 'author',
-                content: 'Licán'
-            },
         ]
     });
 </script>
