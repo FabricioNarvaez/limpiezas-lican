@@ -52,7 +52,7 @@ const router = createRouter({
             return {
                 el: to.hash,
                 behavior: 'smooth',
-                top: 100
+                top: 220
             };
         }else if (savedPosition) {
             return savedPosition;
