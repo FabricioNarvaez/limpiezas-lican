@@ -20,7 +20,7 @@
         link: [
             { 
                 rel: 'canonical', 
-                href: 'https://limpiezaslican.es/servicios' 
+                href: 'https://www.limpiezaslican.es/servicios' 
             }
         ],
         meta: [

@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
-const hostname = 'https://limpiezaslican.es'; 
+const hostname = 'https://www.limpiezaslican.es'; 
 const outputDir = 'dist'; 
 const links = [
     { url: '/', changefreq: 'weekly', priority: 1.0 },

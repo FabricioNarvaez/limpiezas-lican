@@ -45,7 +45,7 @@
         link: [
             { 
                 rel: 'canonical', 
-                href: 'https://limpiezaslican.es/nosotros' 
+                href: 'https://www.limpiezaslican.es/nosotros' 
             }
         ],
         meta: [
