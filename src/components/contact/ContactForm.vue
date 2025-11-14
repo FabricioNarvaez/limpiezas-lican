@@ -96,7 +96,7 @@
                 </template>
             </FormKit>
 
-            <p class="text-lg text-orange-700 font-semibold mb-6 border-l-4 border-orange-500 pl-4 py-1 bg-red-50">
+            <p class="text-lg text-green-700 font-semibold mb-6 border-l-4 border-blue-500 px-4 py-1 bg-blue-50 w-fit">
                 Todos los campos son obligatorios
             </p>
             
