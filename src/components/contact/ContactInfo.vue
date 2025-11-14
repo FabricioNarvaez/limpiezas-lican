@@ -35,7 +35,8 @@
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Horario Atención Cliente</p>
                     <p class="text-texto-secundario">{{ contactInfo.timetable }}</p>
-                    <p class="text-texto-secundario">{{ contactInfo.weekendTimetable }}</p>
+                    <p class="text-texto-secundario">{{ contactInfo.timetableSaturday }}</p>
+                    <p class="text-texto-secundario">{{ contactInfo.timetableSunday }}</p>
                 </div>
             </li>
         </ul>
