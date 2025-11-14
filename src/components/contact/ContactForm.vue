@@ -33,11 +33,12 @@
             :actions="false"
             v-if="!formSubmitted"
         >
+            <template #message></template>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <FormKit
                     type="text"
                     name="nombre"
-                    label="Nombre completo"
+                    label="Nombre completo *"
                     placeholder="Ej. Juan Pérez"
                     validation="required"
                     :validation-messages="{ required: 'Su nombre es obligatorio.' }"
@@ -45,7 +46,7 @@
                 <FormKit
                     type="email"
                     name="email"
-                    label="Email de contacto"
+                    label="Email de contacto *"
                     placeholder="ejemplo@empresa.com"
                     validation="required|email"
                     :validation-messages="{ required: 'El email es obligatorio.', email: 'Introduce un email válido.' }"
@@ -56,7 +57,7 @@
                 <FormKit
                     type="text"
                     name="telefono"
-                    label="Teléfono"
+                    label="Teléfono *"
                     placeholder="Ej. +34 600 123 456"
                     validation="required|number"
                     :validation-messages="{ required: 'Necesitamos un teléfono.', number: 'Solo números.' }"
@@ -64,7 +65,7 @@
                 <FormKit
                     type="select"
                     name="servicio_interes"
-                    label="Servicio de interés principal"
+                    label="Servicio de interés *"
                     placeholder="Selecciona una opción..."
                     validation="required"
                     :options="serviceOptions"
@@ -75,11 +76,11 @@
             <FormKit
                 type="textarea"
                 name="mensaje"
-                label="Detalla tu necesidad (m2, frecuencia, etc.)"
+                label="Detalla tu necesidad (escriba al menos 30 caracteres)*"
                 placeholder="Necesito limpieza semanal para una oficina de 200m²..."
                 rows="5"
-                validation="required|length:10"
-                :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.', length: 'Por favor, escriba al menos 10 caracteres.' }"
+                validation="required|length:30"
+                :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.', length: 'Por favor, escriba al menos 30 caracteres.' }"
             />
 
             <FormKit
@@ -94,6 +95,10 @@
                     </p>
                 </template>
             </FormKit>
+
+            <p class="text-lg text-orange-700 font-semibold mb-6 border-l-4 border-orange-500 pl-4 py-1 bg-red-50">
+                Todos los campos son obligatorios
+            </p>
             
             <FormKit type="submit" label="Solicitar Presupuesto" />
         </FormKit>
