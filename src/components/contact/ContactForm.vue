@@ -79,7 +79,7 @@
                 placeholder="Necesito limpieza semanal para una oficina de 200m²..."
                 rows="5"
                 validation="required|length:10"
-                :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.' }"
+                :validation-messages="{ required: 'Detalle lo máximo posible su necesidad.', length: 'Por favor, escriba al menos 10 caracteres.' }"
             />
 
             <FormKit
