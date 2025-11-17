@@ -8,6 +8,7 @@ const outputDir = 'dist';
 const links = [
     { url: '/', changefreq: 'weekly', priority: 1.0 },
     { url: '/servicios', changefreq: 'monthly', priority: 0.9 },
+    { url: '/servicios/limpieza-y-lavado-de-vehiculos', changefreq: 'monthly', priority: 0.9 },
     { url: '/contacto', changefreq: 'monthly', priority: 0.8 },
     { url: '/nosotros', changefreq: 'monthly', priority: 0.7 },
     // { url: '/legal/politica-privacidad', changefreq: 'yearly', priority: 0.5 },

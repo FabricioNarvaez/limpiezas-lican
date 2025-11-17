@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@views/HomeView.vue';
 import ServicesView from '@views/ServicesView.vue';
+import ServiceVehiclesView from '@views/ServiceVehiclesView.vue';
 import ContactView from '@views/ContactView.vue';
 import AboutUsView from '@views/AboutUsView.vue';
 import PrivacyView from '@views/PrivacyView.vue';
@@ -17,6 +18,11 @@ const routes = [
         path: '/servicios',
         name: 'Services',
         component: ServicesView,
+    },
+    {
+        path: '/servicios/limpieza-y-lavado-de-vehiculos',
+        name: 'ServiceVehicles',
+        component: ServiceVehiclesView,
     },
     {
         path: '/contacto',

@@ -22,6 +22,8 @@ export const allServices = ref([
             'Limpieza exterior con productos ecológicos',
             'Aspirado y limpieza interior completa',
             'Tratamiento de tapicerías y plásticos',
+            'Desinfección y eliminación de olores',
+            'Y mas...',
         ],
         image: null,
         alt: null,
