@@ -23,13 +23,17 @@
                     </a>
                 </div>
             </li>
-            <!-- <li class="flex items-start">
+            <li class="flex items-start">
                 <MapPinIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Oficina Central</p>
-                    <p class="text-texto-secundario">{{ contactInfo.address }}</p>
+                    <a class="text-texto-secundario hover:text-acento hover:underline transition"
+                        :href="contactInfo.addressUrl" target="_blank"
+                    >
+                        {{ contactInfo.address }}
+                    </a>
                 </div>
-            </li> -->
+            </li>
             <li class="flex items-start">
                 <ClockIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
