@@ -1,4 +1,5 @@
 <template>
+    <VehicleCleaningHeader />
     <ImageComparison />
     <Services />
 </template>
@@ -6,6 +7,7 @@
 <script setup>
     import { useHead } from '@unhead/vue';
     import { contactInfo } from '@composables/useContactInfo';
+    import VehicleCleaningHeader from '@components/vehicleCleaning/VehicleCleaningHeader.vue';
     import ImageComparison from '@components/vehicleCleaning/ImageComparison.vue';
     import Services from '@components/vehicleCleaning/Services.vue';
     import MapLocation from '@components/contact/MapLocation.vue';
