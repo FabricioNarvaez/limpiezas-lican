@@ -8,79 +8,74 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
-                <div class="flex items-center text-acento mb-4">
-                    <Icon icon="mdi:vacuum-cleaner" class="w-8 h-8 mr-3" />
-                    <h3 class="text-2xl font-bold">Aspirado Básico / Detallado</h3>
+            <div v-for="service in services" :key="service.title" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300" data-aos="fade-up">
+                <div class="flex items-center text-acento mb-4" data-aos="zoom-in">
+                    <Icon :icon="service.icon" class="w-8 h-8 mr-3" />
+                    <h3 class="text-2xl font-bold">{{ service.title }}</h3>
                 </div>
-                <p class="text-texto-secundario mb-4">
-                    Eliminamos polvo, suciedad y residuos del interior de tu vehículo, incluyendo alfombrillas, asientos y maletero. Deja el habitáculo fresco y limpio.
+                <p class="text-texto-secundario mb-4" data-aos="zoom-in">
+                    {{ service.description }}
                 </p>
-                <ul class="text-texto-principal space-y-2">
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" />Alfombrillas y suelos</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" />Asientos y tapicerías</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div class="flex items-center text-acento mb-4">
-                    <Icon icon="mdi:car-seat-heater" class="w-8 h-8 mr-3" />
-                    <h3 class="text-2xl font-bold">Limpieza Profunda Interior</h3>
-                </div>
-                <p class="text-texto-secundario mb-4">
-                    Vamos más allá: desmontaje parcial de asientos para acceso total, limpieza de conductos de aire y cada rincón. ¡Tu coche como nuevo!
-                </p>
-                <ul class="text-texto-principal space-y-2">
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Desmontaje de asientos</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Conductos de ventilación</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Consolas, paneles y puertas</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div class="flex items-center text-acento mb-4">
-                    <Icon icon="mdi:spray-bottle" class="w-8 h-8 mr-3" />
-                    <h3 class="text-2xl font-bold">Tratamientos Especializados</h3>
-                </div>
-                <p class="text-texto-secundario mb-4">
-                    Desde tratamientos de tapicerías y plásticos hasta la desinfección de ozono y eliminación de olores persistentes.
-                </p>
-                <ul class="text-texto-principal space-y-2">
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Tapicerías y plásticos</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Desinfección con Ozono</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Eliminación de olores</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div class="flex items-center text-acento mb-4">
-                    <Icon icon="mdi:car-wash" class="w-8 h-8 mr-3" />
-                    <h3 class="text-2xl font-bold">Lavado, Pulido y Encerado Exterior</h3>
-                </div>
-                <p class="text-texto-secundario mb-4">
-                    Devuelve el brillo original a la carrocería de tu coche, eliminando micro-arañazos y protegiéndolo con ceras de alta calidad.
-                </p>
-                <ul class="text-texto-principal space-y-2">
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Lavado profesional</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Pulido profesional</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Encerado protector</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Sellado de pintura</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div class="flex items-center text-acento mb-4">
-                    <Icon icon="mdi:truck-fast" class="w-8 h-8 mr-3" />
-                    <h3 class="text-2xl font-bold">Limpieza de Flotas de Empresa</h3>
-                </div>
-                <p class="text-texto-secundario mb-4">
-                    Soluciones personalizadas para mantener la imagen profesional de tu flota de vehículos. Eficiencia y resultados garantizados.
-                </p>
-                <ul class="text-texto-principal space-y-2">
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Planes de mantenimiento</li>
-                    <li class="flex items-start"><Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" /> Facturación simplificada</li>
+                <ul class="text-texto-principal space-y-2" data-aos="zoom-in">
+                    <li v-for="feature in service.features" class="flex items-start">
+                        <Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" />{{ feature }}
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 </template>
+
+<script setup>
+    const services = [
+        {
+            title: 'Aspirado Básico / Detallado',
+            icon: 'mdi:vacuum-cleaner',
+            description: 'Eliminamos polvo, suciedad y residuos del interior de tu vehículo, incluyendo alfombrillas, asientos y maletero. Deja el habitáculo fresco y limpio.',
+            features: [
+                'Alfombrillas y suelos',
+                'Asientos y tapicerías'
+            ]
+        },
+        {
+            title: 'Limpieza Profunda Interior',
+            icon: 'mdi:car-seat-heater',
+            description: 'Vamos más allá: desmontaje parcial de asientos para acceso total, limpieza de conductos de aire y cada rincón. ¡Tu coche como nuevo!',
+            features: [
+                'Desmontaje de asientos',
+                'Conductos de ventilación',
+                'Consolas, paneles y puertas'
+            ]
+        },
+        {
+            title: 'Tratamientos Especializados',
+            icon: 'mdi:spray-bottle',
+            description: 'Desde tratamientos de tapicerías y plásticos hasta la desinfección de ozono y eliminación de olores persistentes.',
+            features: [
+                'Tapicerías y plásticos',
+                'Desinfección con Ozono',
+                'Eliminación de olores'
+            ]
+        },
+        {
+            title: 'Lavado, Pulido y Encerado Exterior',
+            icon: 'mdi:car-wash',
+            description: 'Devuelve el brillo original a la carrocería de tu coche, eliminando micro-arañazos y protegiéndolo con ceras de alta calidad.',
+            features: [
+                'Lavado profesional',
+                'Pulido profesional',
+                'Encerado protector',
+                'Sellado de pintura'
+            ]
+        },
+        {
+            title: 'Limpieza de Flotas de Empresa',
+            icon: 'mdi:truck-fast',
+            description: 'Soluciones personalizadas para mantener la imagen profesional de tu flota de vehículos. Eficiencia y resultados garantizados.',
+            features: [
+                'Planes de mantenimiento',
+                'Facturación simplificada'
+            ]
+        }
+    ];
+</script>
