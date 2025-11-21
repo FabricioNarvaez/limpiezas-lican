@@ -2,6 +2,8 @@
     <VehicleCleaningHeader />
     <ImageComparison />
     <Services />
+    <MapLocation :title="true" :widthC="650" :heightC="650" />
+    <CtaSection :ctaProps />
 </template>
 
 <script setup>
