@@ -23,7 +23,7 @@ createApp(App)
 
 AOS.init({
     duration: 800,
-    offset: 120,
+    offset: 170,
     easing: 'ease-in-out',
     once: true,
     mirror: false

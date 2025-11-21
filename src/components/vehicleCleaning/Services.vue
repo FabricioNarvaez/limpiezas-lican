@@ -1,15 +1,14 @@
-<!-- TODO: add animations to the service cards on scroll -->
 <template>
     <section class="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-extrabold text-texto-principal text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-texto-principal text-center mb-12" data-aos="zoom-in">
             Personaliza tu Limpieza: <span class="text-acento">Adaptada a tus Necesidades</span>
         </h2>
-        <p class="text-xl text-texto-secundario text-center mb-10 max-w-3xl mx-auto">
+        <p class="text-xl text-texto-secundario text-center mb-10 max-w-3xl mx-auto" data-aos="zoom-in">
             Cada vehículo es único, por eso ofrecemos una gama flexible de servicios que puedes combinar para un resultado perfecto.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
                 <div class="flex items-center text-acento mb-4">
                     <Icon icon="mdi:vacuum-cleaner" class="w-8 h-8 mr-3" />
                     <h3 class="text-2xl font-bold">Aspirado Básico / Detallado</h3>
