@@ -27,6 +27,17 @@
 </template>
 
 <script setup>
+    import { useHead } from '@unhead/vue';
     import { contactInfo } from '@composables/useContactInfo';
     import LegalContent from '@components/legal/LegalContent.vue';
+
+    useHead({
+        title: 'Aviso Legal - Limpiezas Licán',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://www.limpiezaslican.es/legal/aviso-legal' 
+            }
+        ],
+    });
 </script>
