@@ -7,6 +7,7 @@ import AboutUsView from '@views/AboutUsView.vue';
 import PrivacyView from '@views/PrivacyView.vue';
 import LegalNoticeView from '@views/LegalNoticeView.vue';
 import CookiesView from '@views/CookiesView.vue';
+import NotFoundView from '@views/NotFoundView.vue';
 
 const routes = [
     {
@@ -49,6 +50,11 @@ const routes = [
         name: 'CookiePolicy',
         component: CookiesView,
     },
+    { 
+        path: '/:pathMatch(.*)*', 
+        name: 'NotFound', 
+        component: NotFoundView 
+    }
 ];
 
 const router = createRouter({
