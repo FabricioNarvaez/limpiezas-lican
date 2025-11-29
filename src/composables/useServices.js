@@ -5,11 +5,11 @@ import {
     HomeIcon, TruckIcon 
 } from '@heroicons/vue/24/outline';
 
-import imgPanelesSolares from '@images/services/PanelesSolares.jpg';
-import imgAsientoCocheLimpio from '@images/services/AsientoCocheLimpio.jpeg';
-import imgCuartoMaquinas from '@images/services/CuartoMaquinas.jpg'; 
-import imgTechoSucioLimpio from '@images/services/TechoSucioLimpio.jpg'; 
-import imgTuberiasAntesDespues from '@images/services/TuberiasAntesDespues.jpg'; 
+import imgPanelesSolares from '@images/services/PanelesSolares.webp';
+import imgAsientoCocheLimpio from '@images/services/AsientoCocheLimpio.webp';
+import imgCuartoMaquinas from '@images/services/CuartoMaquinas.webp'; 
+import imgTechoSucioLimpio from '@images/services/TechoSucioLimpio.webp'; 
+import imgTuberiasAntesDespues from '@images/services/TuberiasAntesDespues.webp'; 
 
 export const allServices = ref([
     {
