@@ -1,0 +1,13 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /cache/
+
+# Disallow: /*.json$
+# Disallow: /*.xml$
+# Disallow: /*.txt$
+
+Sitemap: https://www.limpiezaslican.es/sitemap.xml
