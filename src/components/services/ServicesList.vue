@@ -13,7 +13,7 @@
             <div 
                 :class="[
                     'flex flex-col md:flex-row gap-8 items-start',
-                    { 'md:flex-row-reverse': index % 2 !== 0 } 
+                    { 'md:flex-row-reverse': index % 2 == 0 } 
                 ]"
             >
                 

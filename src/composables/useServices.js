@@ -5,10 +5,11 @@ import {
     HomeIcon, TruckIcon 
 } from '@heroicons/vue/24/outline';
 
-import imgPanelesSolares from '@images/services/1.jpg'; 
-import imgCuartoMaquinas from '@images/services/2.jpg'; 
-import imgTechoSucioLimpio from '@images/services/4.jpg'; 
-import imgTuberiasAntesDespues from '@images/services/8.jpg'; 
+import imgPanelesSolares from '@images/services/PanelesSolares.jpg';
+import imgAsientoCocheLimpio from '@images/services/AsientoCocheLimpio.jpeg';
+import imgCuartoMaquinas from '@images/services/CuartoMaquinas.jpg'; 
+import imgTechoSucioLimpio from '@images/services/TechoSucioLimpio.jpg'; 
+import imgTuberiasAntesDespues from '@images/services/TuberiasAntesDespues.jpg'; 
 
 export const allServices = ref([
     {
@@ -25,7 +26,7 @@ export const allServices = ref([
             'Desinfección y eliminación de olores',
             'Y mas...',
         ],
-        image: null,
+        image: imgAsientoCocheLimpio,
         alt: null,
     },
     {
