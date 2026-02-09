@@ -24,10 +24,12 @@
                 </ul>
             </div>
         </div>
+        <ConditionsAndExtras />
     </section>
 </template>
 
 <script setup>
+    import ConditionsAndExtras from './ConditionsAndExtras.vue';
     const services = [
         {
             title: 'Licán ESSENTIAL',
