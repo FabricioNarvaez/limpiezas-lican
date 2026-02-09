@@ -26,6 +26,7 @@ export const allServices = ref([
             'Desinfección y eliminación de olores',
             'Y mas...',
         ],
+        cleaningLevels: ["Licán ESSENTIAL", "Licán SUPREME", "Licán INFINITE"],
         image: imgAsientoCocheLimpio,
         alt: null,
     },
