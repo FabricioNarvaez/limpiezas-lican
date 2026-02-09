@@ -28,58 +28,6 @@
 </template>
 
 <script setup>
-    // const services = [
-    //     {
-    //         title: 'Aspirado Básico / Detallado',
-    //         icon: 'mdi:vacuum-cleaner',
-    //         description: 'Eliminamos polvo, suciedad y residuos del interior de tu vehículo, incluyendo alfombrillas, asientos y maletero. Deja el habitáculo fresco y limpio.',
-    //         features: [
-    //             'Alfombrillas y suelos',
-    //             'Asientos y tapicerías'
-    //         ]
-    //     },
-    //     {
-    //         title: 'Limpieza Profunda Interior',
-    //         icon: 'mdi:car-seat-heater',
-    //         description: 'Vamos más allá: desmontaje parcial de asientos para acceso total, limpieza de conductos de aire y cada rincón. ¡Tu coche como nuevo!',
-    //         features: [
-    //             'Desmontaje de asientos',
-    //             'Conductos de ventilación',
-    //             'Consolas, paneles y puertas'
-    //         ]
-    //     },
-    //     {
-    //         title: 'Tratamientos Especializados',
-    //         icon: 'mdi:spray-bottle',
-    //         description: 'Desde tratamientos de tapicerías y plásticos hasta la desinfección de ozono y eliminación de olores persistentes.',
-    //         features: [
-    //             'Tapicerías y plásticos',
-    //             'Desinfección con Ozono',
-    //             'Eliminación de olores'
-    //         ]
-    //     },
-    //     {
-    //         title: 'Lavado, Pulido y Encerado Exterior',
-    //         icon: 'mdi:car-wash',
-    //         description: 'Devuelve el brillo original a la carrocería de tu coche, eliminando micro-arañazos y protegiéndolo con ceras de alta calidad.',
-    //         features: [
-    //             'Lavado profesional',
-    //             'Pulido profesional',
-    //             'Encerado protector',
-    //             'Sellado de pintura'
-    //         ]
-    //     },
-    //     {
-    //         title: 'Limpieza de Flotas de Empresa',
-    //         icon: 'mdi:truck-fast',
-    //         description: 'Soluciones personalizadas para mantener la imagen profesional de tu flota de vehículos. Eficiencia y resultados garantizados.',
-    //         features: [
-    //             'Planes de mantenimiento',
-    //             'Facturación simplificada'
-    //         ]
-    //     }
-    // ];
-
     const services = [
         {
             title: 'Licán ESSENTIAL',
