@@ -4,7 +4,7 @@
             Personaliza tu Limpieza: <span class="text-acento">Adaptada a tus Necesidades</span>
         </h2>
         <p class="text-xl text-texto-secundario text-center mb-10 max-w-3xl mx-auto" data-aos="zoom-in">
-            Cada vehículo es único, por eso ofrecemos una gama flexible de servicios que puedes combinar para un resultado perfecto.
+            Cada vehículo es único, por eso ofrecemos diferentes niveles de servicios que para un resultado perfecto.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -18,7 +18,8 @@
                 </p>
                 <ul class="text-texto-principal space-y-2" data-aos="zoom-in">
                     <li v-for="feature in service.features" class="flex items-start">
-                        <Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" />{{ feature }}
+                        <Icon icon="mdi:check-circle" class="w-5 h-5 text-acento mr-2 flex-shrink-0" />
+                        <p v-html="feature"></p>
                     </li>
                 </ul>
             </div>
@@ -27,55 +28,92 @@
 </template>
 
 <script setup>
+    // const services = [
+    //     {
+    //         title: 'Aspirado Básico / Detallado',
+    //         icon: 'mdi:vacuum-cleaner',
+    //         description: 'Eliminamos polvo, suciedad y residuos del interior de tu vehículo, incluyendo alfombrillas, asientos y maletero. Deja el habitáculo fresco y limpio.',
+    //         features: [
+    //             'Alfombrillas y suelos',
+    //             'Asientos y tapicerías'
+    //         ]
+    //     },
+    //     {
+    //         title: 'Limpieza Profunda Interior',
+    //         icon: 'mdi:car-seat-heater',
+    //         description: 'Vamos más allá: desmontaje parcial de asientos para acceso total, limpieza de conductos de aire y cada rincón. ¡Tu coche como nuevo!',
+    //         features: [
+    //             'Desmontaje de asientos',
+    //             'Conductos de ventilación',
+    //             'Consolas, paneles y puertas'
+    //         ]
+    //     },
+    //     {
+    //         title: 'Tratamientos Especializados',
+    //         icon: 'mdi:spray-bottle',
+    //         description: 'Desde tratamientos de tapicerías y plásticos hasta la desinfección de ozono y eliminación de olores persistentes.',
+    //         features: [
+    //             'Tapicerías y plásticos',
+    //             'Desinfección con Ozono',
+    //             'Eliminación de olores'
+    //         ]
+    //     },
+    //     {
+    //         title: 'Lavado, Pulido y Encerado Exterior',
+    //         icon: 'mdi:car-wash',
+    //         description: 'Devuelve el brillo original a la carrocería de tu coche, eliminando micro-arañazos y protegiéndolo con ceras de alta calidad.',
+    //         features: [
+    //             'Lavado profesional',
+    //             'Pulido profesional',
+    //             'Encerado protector',
+    //             'Sellado de pintura'
+    //         ]
+    //     },
+    //     {
+    //         title: 'Limpieza de Flotas de Empresa',
+    //         icon: 'mdi:truck-fast',
+    //         description: 'Soluciones personalizadas para mantener la imagen profesional de tu flota de vehículos. Eficiencia y resultados garantizados.',
+    //         features: [
+    //             'Planes de mantenimiento',
+    //             'Facturación simplificada'
+    //         ]
+    //     }
+    // ];
+
     const services = [
         {
-            title: 'Aspirado Básico / Detallado',
+            title: 'Licán ESSENTIAL',
             icon: 'mdi:vacuum-cleaner',
-            description: 'Eliminamos polvo, suciedad y residuos del interior de tu vehículo, incluyendo alfombrillas, asientos y maletero. Deja el habitáculo fresco y limpio.',
+            description: 'Diseñado para quienes buscan un mantenimiento impecable sin rastro de suciedad.',
             features: [
-                'Alfombrillas y suelos',
-                'Asientos y tapicerías'
+                '<b>Exterior:</b> Lavado exterior. Limpieza de llantas con producto específico no ácido. Secado con aire a presión y microfibra técnica para evitar micro-arañazos.',
+                '<b>Interior:</b> Aspirado profundo de moqueta, asientos y maletero. Limpieza de salpicadero, consola central y aireadores con pinceles de detallado.',
+                '<b>Cristales:</b> Limpieza de cristales con productos específicos para un acabado cristalino.'
             ]
         },
         {
-            title: 'Limpieza Profunda Interior',
+            title: 'Licán SUPREME',
             icon: 'mdi:car-seat-heater',
-            description: 'Vamos más allá: desmontaje parcial de asientos para acceso total, limpieza de conductos de aire y cada rincón. ¡Tu coche como nuevo!',
+            description: 'La solución definitiva para devolverle a tu coche el aspecto de "recién salido del concesionario".',
             features: [
-                'Desmontaje de asientos',
-                'Conductos de ventilación',
-                'Consolas, paneles y puertas'
+                '<b>Todo lo incluido en el nivel ESSENTIAL</b>',
+                '<b>Tratamiento de Tapicería:</b> Limpieza profunda de asientos (tela o alcántara) mediante sistema de inyección y extracción, eliminando manchas y olores',
+                '<b>Desinfección Total:</b> Tratamiento para eliminar bacterias y neutralizar olores persistentes.',
+                '<b>Detallado de Motor:</b> Limpieza segura y acondicionamiento de plásticos del vano motor.',
+                '<b>Protección Exterior:</b> Aplicación de sellador cerámico rápido que aporta un brillo extra y repelencia al agua.'
             ]
         },
         {
-            title: 'Tratamientos Especializados',
+            title: 'Licán INFINITE',
             icon: 'mdi:spray-bottle',
-            description: 'Desde tratamientos de tapicerías y plásticos hasta la desinfección de ozono y eliminación de olores persistentes.',
+            description: 'El nivel más alto de cuidado. Protección profunda y recuperación del color original.',
             features: [
-                'Tapicerías y plásticos',
-                'Desinfección con Ozono',
-                'Eliminación de olores'
+                '<b>Todo lo incluido en el nivel SUPREME</b>',
+                '<b>Descontaminado de Pintura:</b> Eliminación de partículas férricas y contaminación ambiental mediante Clay Bar (barra de arcilla), dejando la carrocería suave al tacto.',
+                '<b>Corrección de Brillo:</b> Pulido fino de un paso para eliminar micro-rayas superficiales y potenciar el reflejo de la pintura.',
+                '<b>Cuidado del Cuero:</b> Limpieza y nutrición profunda de asientos de cuero con productos que mantienen su flexibilidad y acabado mate original.',
+                '<b>Protección Premium:</b> Sellado de larga duración o cera de alta gama (6-12 meses de protección contra agentes externos y sal de carretera).'
             ]
         },
-        {
-            title: 'Lavado, Pulido y Encerado Exterior',
-            icon: 'mdi:car-wash',
-            description: 'Devuelve el brillo original a la carrocería de tu coche, eliminando micro-arañazos y protegiéndolo con ceras de alta calidad.',
-            features: [
-                'Lavado profesional',
-                'Pulido profesional',
-                'Encerado protector',
-                'Sellado de pintura'
-            ]
-        },
-        {
-            title: 'Limpieza de Flotas de Empresa',
-            icon: 'mdi:truck-fast',
-            description: 'Soluciones personalizadas para mantener la imagen profesional de tu flota de vehículos. Eficiencia y resultados garantizados.',
-            features: [
-                'Planes de mantenimiento',
-                'Facturación simplificada'
-            ]
-        }
     ];
 </script>
