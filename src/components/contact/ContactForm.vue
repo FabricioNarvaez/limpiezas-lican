@@ -75,7 +75,7 @@
                     />
                 </div>
 
-                <div v-if="value.servicio_interes === 'vehiculos'" class="mb-6">
+                <div v-if="value.servicio_interes === 'vehiculos'" data-aos="fade-down" data-aos-offset="0" class="mb-6">
                     <FormKit
                         type="select"
                         name="nivel_limpieza"
