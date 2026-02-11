@@ -145,6 +145,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { allServices } from '@composables/useServices';
+import { servicesLevels } from '@composables/useVehicleServices';
 
 const formSubmitted = ref(null);
 const FORM_URL = import.meta.env.VITE_FORM_URL || '';
@@ -154,11 +155,8 @@ const serviceOptions = allServices.value.map(s => ({
     value: s.id
 }));
 
-const cleaningLevelOptions = computed(() => {
-    const vehiculoService = allServices.value.find(s => s.id === 'vehiculos');
-    if (!vehiculoService) return [];
-    
-    const levels = vehiculoService.cleaningLevels.map(level => ({ label: level, value: level }));
+const cleaningLevelOptions = computed(() => {    
+    const levels = servicesLevels.value.map(level => ({ label: level.title, value: level.title }));
     levels.push({ label: 'No lo tengo claro / Necesito asesoramiento', value: 'no_decidido' });
     return levels;
 });
