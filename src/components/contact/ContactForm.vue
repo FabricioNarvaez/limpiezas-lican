@@ -152,7 +152,7 @@ const FORM_URL = import.meta.env.VITE_FORM_URL || '';
 
 const serviceOptions = allServices.value.map(s => ({
     label: s.title,
-    value: s.id
+    value: s.title
 }));
 
 const cleaningLevelOptions = computed(() => {    
