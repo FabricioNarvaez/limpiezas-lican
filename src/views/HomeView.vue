@@ -15,7 +15,7 @@
     import WorkProcess from '@components/home/WorkProcess.vue';
 
     useHead({
-        title: 'Limpiezas Licán - Servicios de limpieza ecológicos en Navarra',
+        title: 'Empresa de limpieza ecológicas en Pamplona y Navarra | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 
@@ -32,11 +32,11 @@
         meta: [
             {
                 name: 'description',
-                content: 'Limpiezas Licán ofrece servicios de limpieza ecológicos en toda Navarra. Comprometidos con la profesionalidad y el cuidado del medio ambiente. 10+ años de experiencia en el sector de la limpieza. Expertos en naves, conductos y paneles solares con productos 100% ecológicos.'
+                content: 'Servicios profesionales de limpieza en Pamplona y Navarra. Especialistas en limpieza de oficinas, naves industriales, comunidades, paneles solares y limpieza integral de vehículos con productos 100% ecológicos.'
             },
             {
                 name: 'keywords',
-                content: 'limpieza ecológica, servicios de limpieza, limpieza en Navarra, limpieza sostenible, Lican, limpieza profesional, limpieza verde'
+                content: 'empresa de limpieza pamplona, servicios de limpieza navarra, limpieza de oficinas pamplona, limpieza naves industriales, limpiezas lican'
             },
         ]
     });

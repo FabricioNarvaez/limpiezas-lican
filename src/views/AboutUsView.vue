@@ -41,7 +41,7 @@
     }
 
     useHead({
-        title: 'Sobre Nosotros - Limpiezas Licán',
+        title: 'Sobre Nosotros | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 

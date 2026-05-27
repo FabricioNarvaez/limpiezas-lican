@@ -16,7 +16,7 @@
     }
 
     useHead({
-        title: 'Catálogo Servicios - Limpiezas Licán',
+        title: 'Catálogo Servicios | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 

@@ -36,7 +36,7 @@
     import LegalContent from '@components/legal/LegalContent.vue';
 
     useHead({
-        title: 'Política Cookies - Limpiezas Licán',
+        title: 'Política Cookies | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 

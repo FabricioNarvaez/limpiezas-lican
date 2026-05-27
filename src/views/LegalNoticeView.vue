@@ -32,7 +32,7 @@
     import LegalContent from '@components/legal/LegalContent.vue';
 
     useHead({
-        title: 'Aviso Legal - Limpiezas Licán',
+        title: 'Aviso Legal | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 

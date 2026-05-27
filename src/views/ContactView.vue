@@ -28,7 +28,7 @@
     }
 
     useHead({
-        title: 'Contacto - Limpiezas Licán',
+        title: 'Contacto | Limpiezas Licán',
         link: [
             { 
                 rel: 'canonical', 
