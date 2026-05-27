@@ -31,7 +31,8 @@
                         <a class="text-texto-secundario hover:text-acento hover:underline transition"
                             :href="contactInfo.addressUrl" target="_blank"
                         >
-                            {{ contactInfo.address }}
+                            {{ `${contactInfo.streetAddress}`}}<br>
+                            {{ `${contactInfo.postalCode} ${contactInfo.addressLocality}, ${contactInfo.addressRegion}, ${contactInfo.addressCountry}`}}
                         </a>
                     </div>
                 </div>

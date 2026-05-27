@@ -21,6 +21,34 @@
         bgColor: 'bg-acento-claro'
     };
 
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "Limpiezas Licán - Limpieza de Vehículos",
+        "image": "https://www.limpiezaslican.es/img/hero-clean.webp",
+        "priceRange": "49€", 
+        "telephone": contactInfo.phoneNoSpaces,
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": contactInfo.streetAddress, 
+            "addressLocality": contactInfo.addressLocality,
+            "addressRegion": contactInfo.addressRegion,
+            "postalCode": contactInfo.postalCode,
+            "addressCountry": contactInfo.addressCountry
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": contactInfo.latitud,
+            "longitude": contactInfo.longitud
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "sunday"],
+            "opens": "09:00",
+            "closes": "20:00"
+        }
+    };
+
     useHead({
         title: 'Limpieza y Lavado de Vehículos en Pamplona | Limpiezas Licán',
         meta: [
@@ -41,7 +69,11 @@
             { 
                 rel: 'canonical', 
                 href: 'https://www.limpiezaslican.es/servicios/limpieza-y-lavado-de-vehiculos' 
-            }
+            },
+            {
+                type: 'application/ld+json',
+                innerHTML: JSON.stringify(localBusinessSchema)
+            },
         ]
     });
 </script>
