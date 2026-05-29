@@ -1,6 +1,6 @@
 import { ref } from 'vue';
 
-export const servicesLevels = ref([
+export const vehicleServicesLevels = ref([
         {
             title: 'Licán ESSENTIAL',
             icon: 'mdi:vacuum-cleaner',

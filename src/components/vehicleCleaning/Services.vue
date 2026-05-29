@@ -8,7 +8,7 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div v-for="service in servicesLevels" :key="service.title" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300 flex flex-col justify-between" data-aos="fade-up">
+            <div v-for="service in vehicleServicesLevels" :key="service.title" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300 flex flex-col justify-between" data-aos="fade-up">
                 <div>
                     <div class="flex items-center text-acento mb-4" data-aos="zoom-in">
                         <Icon :icon="service.icon" class="w-8 h-8 mr-3" />
@@ -42,5 +42,5 @@
 
 <script setup>
     import ConditionsAndExtras from './ConditionsAndExtras.vue';
-    import { servicesLevels } from '@composables/useVehicleServices';
+    import { vehicleServicesLevels } from '@composables/useVehicleServices';
 </script>
