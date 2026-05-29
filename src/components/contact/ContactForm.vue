@@ -31,6 +31,7 @@
             type="form"
             @submit="handleSubmit"
             :actions="false"
+            v-model="initialData"
             v-if="!formSubmitted"
         >
             <template #message></template>
@@ -75,7 +76,7 @@
                     />
                 </div>
 
-                <div v-if="value.servicio_interes === 'vehiculos'" data-aos="fade-down" data-aos-offset="0" class="mb-6">
+                <div v-if="value.servicio_interes === 'Lavado y Limpieza de Vehículos'" data-aos="fade-down" data-aos-offset="0" class="mb-6">
                     <FormKit
                         type="select"
                         name="nivel_limpieza"
@@ -143,20 +144,36 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import { allServices } from '@composables/useServices';
-import { servicesLevels } from '@composables/useVehicleServices';
+import { vehicleServicesLevels } from '@composables/useVehicleServices';
 
 const formSubmitted = ref(null);
+const route = useRoute();
 const FORM_URL = import.meta.env.VITE_FORM_URL || '';
+const initialData = ref({
+    servicio_interes: '',
+    nivel_limpieza: '',
+    quiere_cita: false
+});
+
+onMounted(() => {
+    if (route.query.servicio) {
+        initialData.value.servicio_interes = route.query.servicio;
+    }
+    if (route.query.nivel) {
+        initialData.value.nivel_limpieza = route.query.nivel;
+    }
+});
 
 const serviceOptions = allServices.value.map(s => ({
     label: s.title,
     value: s.title
 }));
 
-const cleaningLevelOptions = computed(() => {    
-    const levels = servicesLevels.value.map(level => ({ label: level.title, value: level.title }));
+const cleaningLevelOptions = computed(() => {
+    const levels = vehicleServicesLevels.value.map(level => ({ label: level.title, value: level.title }));
     levels.push({ label: 'No lo tengo claro / Necesito asesoramiento', value: 'no_decidido' });
     return levels;
 });
