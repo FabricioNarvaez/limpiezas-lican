@@ -23,19 +23,27 @@
                     </a>
                 </div>
             </li>
-            <!-- <li class="flex items-start">
-                <MapPinIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
-                <div class="ml-4">
-                    <p class="font-semibold text-lg text-texto-principal">Oficina Central</p>
-                    <p class="text-texto-secundario">{{ contactInfo.address }}</p>
+            <li class="flex flex-col">
+                <div class="flex items-start">
+                    <MapPinIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
+                    <div class="ml-4">
+                        <p class="font-semibold text-lg text-texto-principal">Oficina Central</p>
+                        <a class="text-texto-secundario hover:text-acento hover:underline transition"
+                            :href="contactInfo.addressUrl" target="_blank"
+                        >
+                            {{ contactInfo.address }}
+                        </a>
+                    </div>
                 </div>
-            </li> -->
+                <MapLocation />
+            </li>
             <li class="flex items-start">
                 <ClockIcon class="w-6 h-6 text-acento flex-shrink-0 mt-1" />
                 <div class="ml-4">
                     <p class="font-semibold text-lg text-texto-principal">Horario Atención Cliente</p>
                     <p class="text-texto-secundario">{{ contactInfo.timetable }}</p>
-                    <p class="text-texto-secundario">{{ contactInfo.weekendTimetable }}</p>
+                    <p class="text-texto-secundario">{{ contactInfo.timetableSaturday }}</p>
+                    <p class="text-texto-secundario">{{ contactInfo.timetableSunday }}</p>
                 </div>
             </li>
         </ul>
@@ -52,4 +60,5 @@
 <script setup>
     import { contactInfo } from '@composables/useContactInfo';
     import { PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/vue/24/outline';
+    import MapLocation from '@components/contact/MapLocation.vue';
 </script>

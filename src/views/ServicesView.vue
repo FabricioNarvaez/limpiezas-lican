@@ -20,7 +20,7 @@
         link: [
             { 
                 rel: 'canonical', 
-                href: 'https://limpiezaslican.es/servicios' 
+                href: 'https://www.limpiezaslican.es/servicios' 
             }
         ],
         meta: [
@@ -30,7 +30,7 @@
             },
             {
                 name: 'keywords',
-                content: 'servicios de limpieza, limpieza ecológica, limpieza en Navarra, limpieza en Pamplona, mantenimiento de paneles solares, limpieza de naves industriales, limpieza oficinas, pulido suelos, limpieza profesional, limpieza sostenible,'
+                content: 'servicios de limpieza, limpieza ecológica, limpieza vehículos, coches, limpieza coches, limpieza motos, limpieza en Navarra, limpieza en Pamplona, mantenimiento de paneles solares, limpieza de naves industriales, limpieza oficinas, pulido suelos, limpieza profesional, limpieza sostenible,'
             },
         ]
     });

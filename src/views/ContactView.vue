@@ -32,7 +32,7 @@
         link: [
             { 
                 rel: 'canonical', 
-                href: 'https://limpiezaslican.es/contacto' 
+                href: 'https://www.limpiezaslican.es/contacto' 
             }
         ],
         meta: [

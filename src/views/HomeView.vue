@@ -19,7 +19,7 @@
         link: [
             { 
                 rel: 'canonical', 
-                href: 'https://limpiezaslican.es/' 
+                href: 'https://www.limpiezaslican.es/' 
             },
             {
                 rel: 'preload', 

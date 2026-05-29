@@ -5,12 +5,31 @@ import {
     HomeIcon, TruckIcon 
 } from '@heroicons/vue/24/outline';
 
-import imgPanelesSolares from '@images/services/1.jpg'; 
-import imgCuartoMaquinas from '@images/services/2.jpg'; 
-import imgTechoSucioLimpio from '@images/services/4.jpg'; 
-import imgTuberiasAntesDespues from '@images/services/8.jpg'; 
+import imgPanelesSolares from '@images/services/PanelesSolares.webp';
+import imgAsientoCocheLimpio from '@images/services/AsientoCocheLimpio.webp';
+import imgCuartoMaquinas from '@images/services/CuartoMaquinas.webp'; 
+import imgTechoSucioLimpio from '@images/services/TechoSucioLimpio.webp'; 
+import imgTuberiasAntesDespues from '@images/services/TuberiasAntesDespues.webp'; 
 
 export const allServices = ref([
+    {
+        id: 'vehiculos',
+        title: 'Lavado y Limpieza de Vehículos',
+        iconComponent: TruckIcon,
+        path: '/servicios#vehiculos',
+        descriptionServices: 'Servicio ecológico de lavado y limpieza integral de vehículos (coches, furgonetas, camiones) utilizando productos biodegradables y técnicas de bajo consumo de agua.',
+        descriptionHome: 'Mantenga sus vehículos impecables con nuestro servicio de limpieza, ideal para flotas empresariales y vehículos particulares.',
+        includes: [
+            'Limpieza exterior con productos ecológicos',
+            'Aspirado y limpieza interior completa',
+            'Tratamiento de tapicerías y plásticos',
+            'Desinfección y eliminación de olores',
+            'Y mas...',
+        ],
+        cleaningLevels: ["Licán ESSENTIAL", "Licán SUPREME", "Licán INFINITE"],
+        image: imgAsientoCocheLimpio,
+        alt: null,
+    },
     {
         id: 'oficinas',
         title: 'Limpieza de Oficinas y Empresas',
@@ -63,7 +82,8 @@ export const allServices = ref([
         iconComponent: SwatchIcon,
         path: '/servicios#suelos',
         descriptionServices: 'Restauración profesional de la belleza de sus suelos (mármol, terrazo, piedra) mediante procesos de pulido, abrillantado y protección cristalizada.',
-        descriptionHome: 'Recuperamos el brillo original de sus suelos. Técnicas especializadas para pulir, abrillantar y cristalizar mármol, terrazo y piedra.',
+        descriptionHome: null,
+        // descriptionHome: 'Recuperamos el brillo original de sus suelos. Técnicas especializadas para pulir, abrillantar y cristalizar mármol, terrazo y piedra.',
         includes: [
             'Pulido y eliminación de arañazos profundos',
             'Abrillantado y sellado de superficies',

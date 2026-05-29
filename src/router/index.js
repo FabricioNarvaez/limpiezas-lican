@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@views/HomeView.vue';
 import ServicesView from '@views/ServicesView.vue';
+import VehicleCleaningView from '@views/VehicleCleaningView.vue';
 import ContactView from '@views/ContactView.vue';
 import AboutUsView from '@views/AboutUsView.vue';
 import PrivacyView from '@views/PrivacyView.vue';
 import LegalNoticeView from '@views/LegalNoticeView.vue';
 import CookiesView from '@views/CookiesView.vue';
+import NotFoundView from '@views/NotFoundView.vue';
 
 const routes = [
     {
@@ -17,6 +19,11 @@ const routes = [
         path: '/servicios',
         name: 'Services',
         component: ServicesView,
+    },
+    {
+        path: '/servicios/limpieza-y-lavado-de-vehiculos',
+        name: 'ServiceVehicles',
+        component: VehicleCleaningView,
     },
     {
         path: '/contacto',
@@ -43,6 +50,11 @@ const routes = [
         name: 'CookiePolicy',
         component: CookiesView,
     },
+    { 
+        path: '/:pathMatch(.*)*', 
+        name: 'NotFound', 
+        component: NotFoundView 
+    }
 ];
 
 const router = createRouter({
@@ -52,7 +64,7 @@ const router = createRouter({
             return {
                 el: to.hash,
                 behavior: 'smooth',
-                top: 100
+                top: 220
             };
         }else if (savedPosition) {
             return savedPosition;

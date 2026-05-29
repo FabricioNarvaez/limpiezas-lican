@@ -34,4 +34,14 @@
 <script setup>
     import { contactInfo } from '@composables/useContactInfo';
     import LegalContent from '@components/legal/LegalContent.vue';
+
+    useHead({
+        title: 'Política Cookies - Limpiezas Licán',
+        link: [
+            { 
+                rel: 'canonical', 
+                href: 'https://www.limpiezaslican.es/legal/politica-cookies' 
+            }
+        ],
+    });
 </script>

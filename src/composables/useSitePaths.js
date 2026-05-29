@@ -1,6 +1,7 @@
 export const sitePaths = [
     { name: 'Inicio', path: '/' },
     { name: 'Servicios', path: '/servicios' },
+    { name: 'Limpieza de Vehículos', path: '/servicios/limpieza-y-lavado-de-vehiculos' },
     { name: 'Nosotros', path: '/nosotros' },
     // { name: 'Contacto', path: '/contacto' }
 ];
